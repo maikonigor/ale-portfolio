@@ -63,7 +63,7 @@ export default function Layout({ children, home }) {
 
                 </div>
             </header>
-            <main className={poppins.className}>{children}</main>
+            <main className={styles.body}>{children}</main>
             <footer className={styles.footer}>
                 <p>Designed in Figma. </p>
                 <p>Built and Deployed with help of Makers.</p>

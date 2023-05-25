@@ -9,7 +9,8 @@
   background: linear-gradient(174.02deg, rgba(242, 242, 242, 0.35) 11.2%, rgba(242, 242, 242, 0.6) 62.91%,
       rgba(255, 255, 255, 0.7) 98.01%,
       #F2F2F2 107.83%),
-    linear-gradient(180deg, rgba(255, 232, 232, 0.2) 51.56%, rgba(234, 242, 250, 0.2) 87.5%), linear-gradient(90deg, rgba(255, 232, 232, 0.54) 12.5%, #EAF2FA 37.5%, #EAF2FA 58.85%, #FFE8E8 93.2%);
+    linear-gradient(180deg, rgba(255, 232, 232, 0.2) 51.56%, rgba(234, 242, 250, 0.2) 87.5%), 
+    linear-gradient(90deg, rgba(255, 232, 232, 0.54) 12.5%, #EAF2FA 37.5%, #EAF2FA 58.85%, #FFE8E8 93.2%);
   border-radius: 0px;
   display: flex;
   flex-direction: row;
