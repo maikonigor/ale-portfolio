@@ -1,91 +1,191 @@
-.container {
-  min-height: 100vh;
-  padding: 0 0.5rem;
+.content {
+  width: 76%;
+  margin-left: 12%;
+  margin-top: 5%;
+}
+
+.introduction {
+  height: 406px;
+  background: linear-gradient(174.02deg, rgba(242, 242, 242, 0.35) 11.2%, rgba(242, 242, 242, 0.6) 62.91%,
+      rgba(255, 255, 255, 0.7) 98.01%,
+      #F2F2F2 107.83%),
+    linear-gradient(180deg, rgba(255, 232, 232, 0.2) 51.56%, rgba(234, 242, 250, 0.2) 87.5%), linear-gradient(90deg, rgba(255, 232, 232, 0.54) 12.5%, #EAF2FA 37.5%, #EAF2FA 58.85%, #FFE8E8 93.2%);
+  border-radius: 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.introductionContent {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.presentationHeader {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  color: #484848;
+
+}
+
+.column {
+  width: 50%;
+  height: 350px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
 }
 
-.title a {
-  color: #0070f3;
-  text-decoration: none;
+.goodToSee {
+  font-size: 24px;
 }
 
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0 0 1rem;
-  line-height: 1.15;
-  font-size: 3.6rem;
-}
-
-.title {
-  text-align: center;
-}
-
-.title,
-.description {
-  text-align: center;
-}
-
-
-.description {
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.grid {
+.btnResume {
+  width: 251px;
+  height: 62px;
+  background: #B23F62;
+  border-radius: 12px;
+  color: #FFE8E8;
+  text-transform: uppercase;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-
-  max-width: 800px;
-  margin-top: 3rem;
 }
 
-.card {
-  margin: 1rem;
-  flex-basis: 45%;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
+.socialButtons {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+.projectTable {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 5%;
 }
 
-.card h3 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+.projectDetail {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+.pills {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
 }
 
-.logo {
-  height: 1em;
+.webpill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 16px;
+  gap: 10px;
+  width: 79px;
+  height: 37px;
+  border-radius: 20px;
+  color: #144F8A;
+  background-color: #EAF2FA;
 }
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
+.mobilepill {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 16px;
+  gap: 10px;
+  width: 79px;
+  height: 37px;
+  border-radius: 20px;
+  color: #B23F62;
+  background-color: #FFE8E8;
+}
+
+.otherpill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 16px;
+  gap: 10px;
+  height: 37px;
+  border-radius: 20px;
+  color: #484848;
+  background-color: #E8E8E8;
+}
+
+.workImages {
+  display: flex;
+  justify-content: center;
+}
+
+.abouColumnParagraph {
+  display: flex;
+  flex-direction: row;
+  align-content: baseline;
+  justify-content: space-between;
+}
+
+.aboutText {
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.385714px;
+  color: #767676;
+}
+
+.firstText {
+  width: 80%;
+}
+
+.aboutsecondParagraph {
+  margin-top: 30px;
+}
+
+.abouColumnContactBox {
+  width: 30%;
+  margin-top: 30px;
+  background: #FFE8E8;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.contactRow{
+  margin-top: 20px;
+}
+
+.contactLabel {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 6.33143px;
+  text-transform: uppercase;
+  color: #484848;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+}
+
+.contactInfo {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.385714px;
+  color: #1A1A1A;
+}
+
+.aboutLastParagraph{
+  width: 50%;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
