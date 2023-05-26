@@ -5,12 +5,12 @@ import homeStyles from '../styles/Home.module.css'
 
 const socialButtons = [
   
-  { img: '/images/behance.png', url: '#' },
+  { img: '/images/behance.png', url: 'https://behance.net/alexsandralopes' },
   { img: '/images/instagram.png', url: 'https://www.instagram.com/realalelopes' },
-  { img: '/images/dribbble.png', url: '' },
-  { img: '/images/linkedin.png', url: '' },
-  { img: '/images/email.png', url: '' },
-  { img: '/images/medium.png', url: '' }
+  { img: '/images/dribbble.png', url: 'https://dribbble.com/alexsandralopes' },
+  { img: '/images/linkedin.png', url: 'https://www.linkedin.com/in/alexsandralopes/' },
+  { img: '/images/email.png', url: 'mailto://alexia11lopess@gmail.com' },
+  { img: '/images/medium.png', url: 'https://medium.com/@eualelopes' }
 ]
 
 export default function Home() {

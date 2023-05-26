@@ -72,7 +72,6 @@ export default function Layout({ children, page }) {
                                 )
                             })
                         }
-                        <li className={styles.contactme + ' ' + styles.navItem}>contact me</li>
                     </ul>
 
                 </div>
