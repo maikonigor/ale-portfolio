@@ -89,3 +89,19 @@
   }
 
 }
+@media all and (max-width: 500px){
+
+  .presentationHeader{
+    font-size: 32px;
+  }
+  .btnResume{
+    width: 150px;
+    height: 50px;
+    font-size: 12px;
+    margin-bottom: 1rem;
+  }
+  .introductionText{
+    font-size: 12px;
+  }
+
+}

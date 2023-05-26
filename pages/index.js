@@ -24,7 +24,7 @@ export default function Home() {
             <div className={homeStyles.btnResume}>Read my resume</div>
           </div>
           <div className={homeStyles.column}>
-            <p>
+            <p className={homeStyles.introductionText}>
               I’m a UX/UI designer who creates user-friendly and userful digital<br />
               products. I’m empathetic, curious, and creative. When I’m not designing,<br />
               you can find me sipping coffee, reading books, cuddling with cats, or <br />
