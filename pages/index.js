@@ -4,6 +4,7 @@ import utilStyles from '../styles/utils.module.css';
 import homeStyles from '../styles/Home.module.css'
 
 const socialButtons = [
+  
   { img: '/images/behance.png', url: '#' },
   { img: '/images/instagram.png', url: 'https://www.instagram.com/realalelopes' },
   { img: '/images/dribbble.png', url: '' },
@@ -133,40 +134,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* ABOUT */}
-      <div className={utilStyles.content}>
-        <p className={utilStyles.headingMd}>ABOUT</p>
-        <div className={homeStyles.abouColumnParagraph}>
-          <p className={homeStyles.aboutText + ' ' + homeStyles.firstText} >
-            🌷 Before becoming a UX Designer, I did a few things: I studied Literature/English, I worked as a teacher and as a proofreader in educational publishing houses. After that, I studied Interior Design, and worked as a decoration consultant. Here I started to understand how design can solve problems and still contribute to well-being through comfort, ergonomics, usability and aesthetics.
-          </p>
-          <Image src='/images/profile-round.png' width={218} height={218}></Image>
-        </div>
-        <div className={homeStyles.aboutsecondParagraph}>
-          <p className={homeStyles.aboutText + ' ' + homeStyles.aboutsecondParagraph}>💫 And then I decided to be a UX Designer, where I could gather all my training background, and also develop other passions that I always had, such as illustration, digital design, books, writing and even teaching.</p>
-          <p className={homeStyles.aboutText + ' ' + homeStyles.aboutsecondParagraph}>📕 Besides loving helping people to have a little more comfort, well-being and joy in life (and that goes for work and personal relationships), I love passing on my knowledge. I like to write articles and tell about things I learned in my life as a designer, to share my experiences and life lessons.</p>
-        </div>
-        <div className={homeStyles.abouColumnParagraph}>
-          <div className={homeStyles.abouColumnContactBox}>
-            <div className={homeStyles.contactRow}>
-              <div className={homeStyles.contactLabel}>EMAIL</div>
-              <div className={homeStyles.contactInfo}>alexia11lopess@gmail.com</div>
-            </div>
-            <div className={homeStyles.contactRow}>
-              <div className={homeStyles.contactLabel}>ROLE</div>
-              <div className={homeStyles.contactInfo}>UX/UI Designers</div>
-            </div>
-            <div className={homeStyles.contactRow}>
-              <div className={homeStyles.contactLabel}>PHONE</div>
-              <div className={homeStyles.contactInfo}>(+55) 85 99902 0120</div>
-            </div>
-          </div>
-          <div className={homeStyles.aboutLastParagraph}>
-            <p className={homeStyles.aboutText}>🎨 I have a lot of fun doing things that inspire me and instigate my creativity. I love creating designs that speak more of the things I love: books, coffee, wine. I love drawing people I love and/or inspire me.</p>
-            <p className={homeStyles.aboutText}>☕ But not only design lives the designer. I love singing, skating, playing Super Mario World and cooking vegan food. You can always find me with a cup of coffee and looking for a kitten to cuddle.</p>
-          </div>
-        </div>
-      </div>
+      
     </Layout>
   );
 }
