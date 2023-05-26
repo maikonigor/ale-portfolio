@@ -52,7 +52,7 @@ export default function Layout({ children, page }) {
                 <meta name="twitter:card" content="summary_large_image" />
             </Head>
             <header className={styles.header}>
-                <div className={styles.nav}>
+                <nav className={styles.nav}>
                     <Link href='/'>
                         <Image
                             priority
@@ -74,7 +74,7 @@ export default function Layout({ children, page }) {
                         }
                     </ul>
 
-                </div>
+                </nav>
             </header>
             <main className={styles.body}>{children}</main>
             <footer className={styles.footer}>

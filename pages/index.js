@@ -49,12 +49,12 @@ export default function Home() {
       </div>
 
       {/* Projects section */}
-      <div className={utilStyles.content}>
+      <div className={`${utilStyles.content} margin-top-2`}>
         <p className={utilStyles.headingMd}>Projects</p>
 
         {/* Medlog */}
         <div className={utilStyles.sectionColumn}>
-          <Image src='/images/medlog.png' width={560} height={400} />
+          <Image src='/images/medlog.png' width={560} height={400} className={utilStyles.columImages} />
           <div className={utilStyles.sectionColumnDetail}>
             <p className={utilStyles.headingMd}>Hospital Multi Platfoms Login </p>
             <div className={utilStyles.pills}>
@@ -68,6 +68,7 @@ export default function Home() {
 
         {/* Simbora landing page */}
         <div className={utilStyles.sectionColumn}>
+          <Image src='/images/simbora-lp.png' width={560} height={400} className={utilStyles.columImages} />
           <div className={utilStyles.sectionColumnDetail}>
             <p className={utilStyles.headingMd}>Simbora - Landing Page </p>
             <div className={utilStyles.pills}>
@@ -78,12 +79,11 @@ export default function Home() {
               Delivery management platform that offers order, customer, driver, and vehicle management, route optimization, real-time tracking, and dashboard bi, which works for any delivery business.
             </p>
           </div>
-          <Image src='/images/simbora-lp.png' width={560} height={400} />
         </div>
 
         {/* SImbora delivery */}
         <div className={utilStyles.sectionColumn}>
-          <Image src='/images/simbora-delivery.png' width={560} height={400} />
+          <Image src='/images/simbora-delivery.png' width={560} height={400} className={utilStyles.columImages} />
           <div className={utilStyles.sectionColumnDetail}>
             <p className={utilStyles.headingMd}>Simbora Delivery </p>
             <div className={utilStyles.pills}>
@@ -98,6 +98,7 @@ export default function Home() {
 
         {/* Good Reads */}
         <div className={utilStyles.sectionColumn}>
+          <Image src='/images/good-reads.png' width={560} height={400} className={utilStyles.columImages} />
           <div className={utilStyles.sectionColumnDetail}>
             <p className={utilStyles.headingMd}>GoodReads - Study Case</p>
             <div className={utilStyles.pills}>
@@ -107,12 +108,11 @@ export default function Home() {
               This study case solves some interface, visual hierarchy and flow issues found on GoodReads app. I simplified the process of editing profile, resulting in a better user experience and interface.
             </p>
           </div>
-          <Image src='/images/good-reads.png' width={560} height={400} />
         </div>
 
         {/* Extras */}
         <div className={utilStyles.sectionColumn}>
-          <Image src='/images/extras.png' width={560} height={400} />
+          <Image src='/images/extras.png' width={560} height={400} className={utilStyles.columImages} />
           <div className={utilStyles.sectionColumnDetail}>
             <p className={utilStyles.headingMd}>Extras </p>
             <div className={utilStyles.pills}>
@@ -130,7 +130,7 @@ export default function Home() {
       <div className={utilStyles.content}>
         <p className={utilStyles.headingMd}>WORK</p>
         <div className={homeStyles.workImages}>
-          <Image src='/images/work.png' width={843.81} height={232}></Image>
+          <Image src='/images/work.png' width={843.81} height={232} className={utilStyles.columImages}></Image>
         </div>
       </div>
 
