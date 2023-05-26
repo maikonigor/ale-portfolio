@@ -10,7 +10,7 @@ export default function Extras() {
 
                 {/* covid */}
                 <div className={utilStyles.sectionColumn}>
-                    <Image src='/images/covid19.png' width={560} height={400} />
+                    <Image src='/images/covid19.png' width={560} height={400} className={utilStyles.columImages} />
                     <div className={utilStyles.sectionColumnDetail}>
                         <p className={utilStyles.headingMd}>Covid-19 - Ilustrations </p>
                         <div className={utilStyles.pills}>
@@ -27,6 +27,7 @@ export default function Extras() {
                 {/* Bauhaus */}
 
                 <div className={utilStyles.sectionColumn}>
+                    <Image src='/images/bauhausbook.png' width={560} height={400} className={utilStyles.columImages} />
                     <div className={utilStyles.sectionColumnDetail}>
                         <p className={utilStyles.headingMd}>ABC da Bauhaus - Book Cover </p>
                         <div className={utilStyles.pills}>
@@ -36,13 +37,12 @@ export default function Extras() {
                         This study case solves some interface, visual hierarchy and flow issues found on GoodReads app. I simplified the process of editing profile, resulting in a better user experience and interface.
                         </p>
                     </div>
-                    <Image src='/images/bauhausbook.png' width={560} height={400} />
                 </div>
 
                 {/* Pride and prejudice */}
 
                 <div className={utilStyles.sectionColumn}>
-                    <Image src='/images/pride-prejudice.png' width={560} height={400} />
+                    <Image src='/images/pride-prejudice.png' width={560} height={400} className={utilStyles.columImages} />
                     <div className={utilStyles.sectionColumnDetail}>
                         <p className={utilStyles.headingMd}>Pride and Prejudice - Book cover </p>
                         <div className={utilStyles.pills}>
@@ -56,6 +56,7 @@ export default function Extras() {
 
                 {/* Veganildos */}
                 <div className={utilStyles.sectionColumn}>
+                    <Image src='/images/veganildos.png' width={560} height={400} className={utilStyles.columImages} />
                     <div className={utilStyles.sectionColumnDetail}>
                         <p className={utilStyles.headingMd}>Veganildos Podcast - Logo </p>
                         <div className={utilStyles.pills}>
@@ -65,12 +66,11 @@ export default function Extras() {
                         This study case solves some interface, visual hierarchy and flow issues found on GoodReads app. I simplified the process of editing profile, resulting in a better user experience and interface.
                         </p>
                     </div>
-                    <Image src='/images/veganildos.png' width={560} height={400} />
                 </div>
 
                 {/* MAR ABERTO */}
                 <div className={utilStyles.sectionColumn}>
-                    <Image src='/images/mar-aberto.png' width={560} height={400} />
+                    <Image src='/images/mar-aberto.png' width={560} height={400} className={utilStyles.columImages} />
                     <div className={utilStyles.sectionColumnDetail}>
                         <p className={utilStyles.headingMd}>Mar Aberto - Landing Page </p>
                         <div className={utilStyles.pills}>

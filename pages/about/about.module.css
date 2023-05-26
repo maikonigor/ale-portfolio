@@ -60,3 +60,31 @@
     flex-direction: column;
     justify-content: space-between;
   }
+
+  @media all and (max-width: 1200px) {
+
+    
+    .contactLabel{
+      font-size: 12px;
+    }
+    .contactInfo {
+      font-size: 16px;
+    }
+  }
+
+  @media all and (max-width: 800px) {
+    .abouColumnParagraph{
+      flex-wrap: wrap;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .firstText {
+      width: 100%;
+    }
+
+    .abouColumnContactBox {
+      width: 100%;
+    }
+  }
