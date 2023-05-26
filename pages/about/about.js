@@ -22,7 +22,7 @@ export default function About() {
                     <p className={aboutStyles.aboutText + ' ' + aboutStyles.aboutsecondParagraph}>☕ But not only design lives the designer. I love singing, skating, playing Super Mario World and cooking vegan food. You can always find me with a cup of coffee and looking for a kitten to cuddle.</p>
                 </div>
 
-                <p className={utilStyles.headingMd  + ' margin-top-4'}>Find me</p>
+                <p className={utilStyles.headingMd + ' margin-top-4'}>Find me</p>
                 <div className={aboutStyles.abouColumnParagraph}>
                     <div className={aboutStyles.abouColumnContactBox}>
                         <div className={aboutStyles.contactRow}>
@@ -41,15 +41,21 @@ export default function About() {
                     <div className={aboutStyles.abouColumnContactBox}>
                         <div className={aboutStyles.contactRow}>
                             <div className={aboutStyles.contactLabel}>LinkedIn</div>
-                            <div className={aboutStyles.contactInfo}>linkedin.com/alexsandralopes</div>
+                            <div className={aboutStyles.contactInfo}>
+                                <a target="_blank" href='https://www.linkedin.com/in/alexsandralopes/'>linkedin.com/alexsandralopes</a>
+                            </div>
                         </div>
                         <div className={aboutStyles.contactRow}>
                             <div className={aboutStyles.contactLabel}>Behance</div>
-                            <div className={aboutStyles.contactInfo}>behance.net/alexsandralopes</div>
+                            <div className={aboutStyles.contactInfo}>
+                                <a target="_blank" href='https://behance.net/alexsandralopes'>behance.net/alexsandralopes</a>
+                            </div>
                         </div>
                         <div className={aboutStyles.contactRow}>
                             <div className={aboutStyles.contactLabel}>Medium</div>
-                            <div className={aboutStyles.contactInfo}>medium.com/@eualelopes</div>
+                            <div className={aboutStyles.contactInfo}>
+                                <a target="_blank" href='https://medium.com/@eualelopes'>medium.com/@eualelopes</a>
+                            </div>
                         </div>
                     </div>
                 </div>
