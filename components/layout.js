@@ -2,6 +2,8 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styles from './layout.module.css';
 import { Poppins } from 'next/font/google';
+import { useRouter } from 'next/router';
+import Link from 'next/link';
 
 const poppins = Poppins(
     {
@@ -12,20 +14,25 @@ const poppins = Poppins(
 const name = 'Alê Lopes';
 export const siteTitle = 'Ale lopes portfolio';
 
+
+
+
 const navItems =
     [
-        { title: "Resume", active: false },
-        { title: "projects", active: false },
-        { title: "extras", active: false },
-        { title: "about", active: false },
-        { title: "publications", active: false },
+        { title: "Resume", route: '/resume/resume' },
+        { title: "projects", route: '#' },
+        { title: "extras", route: '/extras/extras' },
+        { title: "about", route: '#' },
+        { title: "publications", route: '/publications/publications' },
     ]
 
 
-export default function Layout({ children, home }) {
+export default function Layout({ children, page }) {
+    const router = useRouter();
     return (
         <div>
             <Head>
+                <title>Ale Lopes</title>
                 <link rel="icon" href="/favicon.ico" />
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -45,17 +52,23 @@ export default function Layout({ children, home }) {
             </Head>
             <header className={styles.header}>
                 <div className={styles.nav}>
-                    <Image
-                        priority
-                        src="/images/logo.png"
-                        height={31}
-                        width={54}
-                        alt="logo"
-                    />
+                    <Link href='/'>
+                        <Image
+                            priority
+                            src="/images/logo.png"
+                            height={31}
+                            width={54}
+                            alt="logo"
+                        />
+                    </Link>
                     <ul className={styles.navitems}>
                         {
                             navItems.map((item, index) => {
-                                return <li className={styles.navItem}>{item.title}</li>
+                                return (
+                                    <li className={styles.navItem +' '+ (item.route == router.pathname? styles.active:'')}>
+                                        <Link href={item.route}>{item.title}</Link>
+                                    </li>
+                                )
                             })
                         }
                         <li className={styles.contactme + ' ' + styles.navItem}>contact me</li>
@@ -66,7 +79,7 @@ export default function Layout({ children, home }) {
             <main className={styles.body}>{children}</main>
             <footer className={styles.footer}>
                 <p>Designed in Figma. </p>
-                <p>Built and Deployed with help of Makers.</p>
+                <p>Developed by Maikon Soares</p>
                 <p className={styles.textBlack80}>Alexsandra Lopes • 2023</p>
             </footer>
         </div>
