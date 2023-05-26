@@ -23,7 +23,7 @@ const navItems =
         { title: "projects", route: '#' },
         { title: "extras", route: '/extras/extras' },
         { title: "about", route: '#' },
-        { title: "publications", route: '#' },
+        { title: "publications", route: '/publications/publications' },
     ]
 
 
