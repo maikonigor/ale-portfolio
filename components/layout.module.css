@@ -38,6 +38,10 @@
     cursor: pointer;
 }
 
+.active{
+    color: #B23F62;
+}
+
 .contactme {
     background-color: #FFE8E8;
     padding: 8px 16px;
