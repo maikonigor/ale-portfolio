@@ -48,16 +48,16 @@ export default function Home() {
       </div>
 
       {/* Projects section */}
-      <div className={homeStyles.content}>
+      <div className={utilStyles.content}>
         <p className={utilStyles.headingMd}>Projects</p>
 
         {/* Medlog */}
-        <div className={homeStyles.projectTable}>
+        <div className={utilStyles.sectionColumn}>
           <Image src='/images/medlog.png' width={560} height={400} />
-          <div className={homeStyles.projectDetail}>
+          <div className={utilStyles.sectionColumnDetail}>
             <p className={utilStyles.headingMd}>Hospital Multi Platfoms Login </p>
-            <div className={homeStyles.pills}>
-              <div className={homeStyles.webpill}>WEB</div>
+            <div className={utilStyles.pills}>
+              <div className={utilStyles.webpill}>WEB</div>
             </div>
             <p>
               A platform that concentrates many different hospital contexts to each type of treatment. Here the health professionals can do just one sign in to access many platform according their health context.
@@ -66,12 +66,12 @@ export default function Home() {
         </div>
 
         {/* Simbora landing page */}
-        <div className={homeStyles.projectTable}>
-          <div className={homeStyles.projectDetail}>
+        <div className={utilStyles.sectionColumn}>
+          <div className={utilStyles.sectionColumnDetail}>
             <p className={utilStyles.headingMd}>Simbora - Landing Page </p>
-            <div className={homeStyles.pills}>
-              <div className={homeStyles.webpill}>WEB</div>
-              <div className={homeStyles.mobilepill}>MOBILE</div>
+            <div className={utilStyles.pills}>
+              <div className={utilStyles.webpill}>WEB</div>
+              <div className={utilStyles.mobilepill}>MOBILE</div>
             </div>
             <p>
               Delivery management platform that offers order, customer, driver, and vehicle management, route optimization, real-time tracking, and dashboard bi, which works for any delivery business.
@@ -81,13 +81,13 @@ export default function Home() {
         </div>
 
         {/* SImbora delivery */}
-        <div className={homeStyles.projectTable}>
+        <div className={utilStyles.sectionColumn}>
           <Image src='/images/simbora-delivery.png' width={560} height={400} />
-          <div className={homeStyles.projectDetail}>
+          <div className={utilStyles.sectionColumnDetail}>
             <p className={utilStyles.headingMd}>Simbora Delivery </p>
-            <div className={homeStyles.pills}>
-              <div className={homeStyles.webpill}>WEB</div>
-              <div className={homeStyles.mobilepill}>MOBILE</div>
+            <div className={utilStyles.pills}>
+              <div className={utilStyles.webpill}>WEB</div>
+              <div className={utilStyles.mobilepill}>MOBILE</div>
             </div>
             <p>
               Simbora is a food delivery service platform that connects customers with local restaurants and cuisines. It offers fast, convenient, and affordable delivery options for any taste. Simbora makes ordering food easy and enjoyable.
@@ -96,11 +96,11 @@ export default function Home() {
         </div>
 
         {/* Good Reads */}
-        <div className={homeStyles.projectTable}>
-          <div className={homeStyles.projectDetail}>
+        <div className={utilStyles.sectionColumn}>
+          <div className={utilStyles.sectionColumnDetail}>
             <p className={utilStyles.headingMd}>GoodReads - Study Case</p>
-            <div className={homeStyles.pills}>
-              <div className={homeStyles.mobilepill}>MOBILE</div>
+            <div className={utilStyles.pills}>
+              <div className={utilStyles.mobilepill}>MOBILE</div>
             </div>
             <p>
               This study case solves some interface, visual hierarchy and flow issues found on GoodReads app. I simplified the process of editing profile, resulting in a better user experience and interface.
@@ -110,11 +110,11 @@ export default function Home() {
         </div>
 
         {/* Extras */}
-        <div className={homeStyles.projectTable}>
+        <div className={utilStyles.sectionColumn}>
           <Image src='/images/extras.png' width={560} height={400} />
-          <div className={homeStyles.projectDetail}>
+          <div className={utilStyles.sectionColumnDetail}>
             <p className={utilStyles.headingMd}>Extras </p>
-            <div className={homeStyles.pills}>
+            <div className={utilStyles.pills}>
               <div className={homeStyles.otherpill}>OTHER DESIGNS</div>
             </div>
             <p>
@@ -126,7 +126,7 @@ export default function Home() {
 
 
       {/* WORK */}
-      <div className={homeStyles.content}>
+      <div className={utilStyles.content}>
         <p className={utilStyles.headingMd}>WORK</p>
         <div className={homeStyles.workImages}>
           <Image src='/images/work.png' width={843.81} height={232}></Image>
@@ -134,7 +134,7 @@ export default function Home() {
       </div>
 
       {/* ABOUT */}
-      <div className={homeStyles.content}>
+      <div className={utilStyles.content}>
         <p className={utilStyles.headingMd}>ABOUT</p>
         <div className={homeStyles.abouColumnParagraph}>
           <p className={homeStyles.aboutText + ' ' + homeStyles.firstText} >
