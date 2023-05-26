@@ -2,6 +2,8 @@ import utilStyles from '../../styles/utils.module.css';
 import Layout from '../../components/layout';
 import resumeStyle from './resume.module.css'
 export default function Resume() {
+
+  let resumeURL = 'https://drive.google.com/file/d/1zjvrks4ZdD9SHdvNiQxcYKmGTXGVdH1P/view?usp=share_link';
   return (
     <Layout>
       <div className={utilStyles.content}>
@@ -100,7 +102,9 @@ export default function Resume() {
           </div>
         </section>
 
-        <div className={`${resumeStyle.btnResume} margin-top-3`}>Download resume</div>
+        <a href={resumeURL} target='_blank'>
+          <div className={`${resumeStyle.btnResume} margin-top-3`}>Download resume</div>
+        </a>
       </div>
     </Layout>
   );
