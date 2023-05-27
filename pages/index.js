@@ -4,7 +4,7 @@ import utilStyles from '../styles/utils.module.css';
 import homeStyles from '../styles/Home.module.css'
 
 const socialButtons = [
-  
+
   { img: '/images/behance.png', url: 'https://behance.net/alexsandralopes' },
   { img: '/images/instagram.png', url: 'https://www.instagram.com/realalelopes' },
   { img: '/images/dribbble.png', url: 'https://dribbble.com/alexsandralopes' },
@@ -23,26 +23,28 @@ export default function Home() {
             <p className={homeStyles.goodToSee}>Good to see you here</p>
             <div className={homeStyles.btnResume}>Read my resume</div>
           </div>
-          <div className={homeStyles.column}>
+          <div className={`${homeStyles.column}`}>
             <p className={homeStyles.introductionText}>
-              I’m a UX/UI designer who creates user-friendly and userful digital<br />
-              products. I’m empathetic, curious, and creative. When I’m not designing,<br />
-              you can find me sipping coffee, reading books, cuddling with cats, or <br />
-              skating with my inline rollerblades around town. I’m also vegan, wine<br />
+              I’m a UX/UI designer who creates user-friendly and userful digital
+              products. I’m empathetic, curious, and creative. When I’m not designing,
+              you can find me sipping coffee, reading books, cuddling with cats, or
+              skating with my inline rollerblades around town. I’m also vegan, wine
               lover, and a cooking fan who likes to whip up
               delicious dishes with healthy (or not) plant
               based ingredients.
             </p>
-            <div className={homeStyles.socialButtons}>
-              {
-                socialButtons.map(item => {
-                  return (
-                    <a href={item.url} target='_blank'>
-                      <Image src={item.img} width={28} height={28} />
-                    </a>
-                  )
-                })
-              }
+            <div className={homeStyles.socialButtonsContainer}>
+              <div className={homeStyles.socialButtons}>
+                {
+                  socialButtons.map(item => {
+                    return (
+                      <a href={item.url} target='_blank'>
+                        <Image src={item.img} width={28} height={28} />
+                      </a>
+                    )
+                  })
+                }
+              </div>
             </div>
           </div>
         </div>
@@ -134,7 +136,7 @@ export default function Home() {
         </div>
       </div>
 
-      
+
     </Layout>
   );
 }

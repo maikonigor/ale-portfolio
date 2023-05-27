@@ -79,10 +79,10 @@
     margin: 3rem 0 0;
 }
 
-@media all and (max-width: 800px) {
+/* @media all and (max-width: 800px) {
 
  .navitems {
     width: 100%;
     flex-wrap: wrap;
  }
-}
+} */

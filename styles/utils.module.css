@@ -134,7 +134,7 @@
   background-color: #E8E8E8;
 }
 
-@media all and (max-width: 1300px) {
+/* @media all and (max-width: 1300px) {
   .headingMd {
     font-size: 24px;
   }
@@ -185,4 +185,4 @@
     -webkit-transform: scale(0.6, 0.6);
   }
 
-}
+} */
