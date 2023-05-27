@@ -59,16 +59,21 @@
 }
 
 .content {
-  width: 75%;
-  margin-left: 12.5%;
+  display: flex;
+  flex-direction: column;
 }
+
+.topic{
+  margin-left: 10%;
+}
+
 
 .sectionColumn {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: no-wrap;
-  flex-grow: 1;
+  justify-content: space-evenly;
+  flex-basis: 0;
+  flex-wrap: wrap;
   margin-top: 5%;
 }
 
@@ -77,16 +82,16 @@
 }
 
 .columImages {
-  width: 560px;
-  height: 400px;
+  
+  object-fit: contain;
 }
 
 .sectionColumnDetail {
-  /* width: 40%; */
-  padding: 50px;
+  width: 30%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  font-size: 1.2rem;
 }
 
 .pills {
@@ -134,18 +139,45 @@
   background-color: #E8E8E8;
 }
 
-@media all and (max-width: 1300px) {
-  .headingMd {
-    font-size: 24px;
+@media all and (max-width: 1150px) {
+  .sectionColumnDetail {
+    font-size: 1rem;
+    justify-content: flex-start;
   }
 
+  .headingMd {
+    font-size: 2rem;
+  }
+
+
+}
+
+@media all and (max-width: 1120px) {
+  .sectionColumnDetail {
+    width: 80%;
+    /* align-items: center; */
+  }
   .columImages {
-    transform: scale(0.9, 0.9);
-    -ms-transform: scale(0.9, 0.9);
-    -webkit-transform: scale(0.9, 0.9);
+    width: 50%;
+    height: auto;
+    object-fit: contain;
   }
 }
 
+@media all and (max-width: 700px) {
+  .headingMd {
+    font-size: 2rem;
+  }
+
+  .sectionColumnDetail {
+    font-size: 1.2rem;
+  }
+  .columImages {
+    width: 80%;
+  }
+}
+
+/* 
 @media all and (max-width: 1200px) {
   .content {
     width: 90%;
@@ -185,4 +217,4 @@
     -webkit-transform: scale(0.6, 0.6);
   }
 
-}
+} */

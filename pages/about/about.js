@@ -7,7 +7,7 @@ export default function About() {
     return (
         <Layout>
             {/* ABOUT */}
-            <div className={utilStyles.content}>
+            <div className={aboutStyles.content}>
                 <p className={utilStyles.headingMd}>ABOUT</p>
                 <div className={aboutStyles.abouColumnParagraph}>
                     <p className={aboutStyles.aboutText + ' ' + aboutStyles.firstText} >

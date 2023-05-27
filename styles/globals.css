@@ -65,14 +65,3 @@ button {
   margin-right: 1.5rem;
 }
 
-@media all and (max-width: 1300px) {
-  p{
-    font-size: 14px;
-  }
-}
-
-@media all and (max-width: 980px) {
-  p{
-    font-size: 18px;
-  }
-}

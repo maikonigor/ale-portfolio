@@ -6,7 +6,7 @@ export default function Publications() {
     return (
         <Layout>
             <div className={utilStyles.content}>
-                <p className={utilStyles.headingMd}>Publications</p>
+                <p className={`${utilStyles.headingMd} ${utilStyles.topic}`}>Publications</p>
 
                 {/* covid */}
                 <div className={utilStyles.sectionColumn}>

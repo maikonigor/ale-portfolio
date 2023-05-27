@@ -1,3 +1,9 @@
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 10%;
+}
 .title {
     color: #B23F62;
     font-weight: 700;

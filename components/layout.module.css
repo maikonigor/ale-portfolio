@@ -14,19 +14,24 @@
 
 
 .nav {
-    width: 76%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .navitems {
-    width: calc(100% - 11%);
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    flex-basis: content;
+    flex-wrap: wrap;
+    flex-grow: 0.7;
+    padding: 5px;
 }
 
 .navItem {
@@ -37,6 +42,7 @@
     color: #484848;
     text-transform: uppercase;
     cursor: pointer;
+    flex-grow: 1.2;
 }
 
 .active{
@@ -77,12 +83,4 @@
 
 .backToHome {
     margin: 3rem 0 0;
-}
-
-@media all and (max-width: 800px) {
-
- .navitems {
-    width: 100%;
-    flex-wrap: wrap;
- }
 }
