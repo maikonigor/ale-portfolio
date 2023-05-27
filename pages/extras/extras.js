@@ -6,7 +6,7 @@ export default function Extras() {
     return (
         <Layout>
             <div className={utilStyles.content}>
-                <p className={utilStyles.headingMd}>Extras</p>
+                <p className={`${utilStyles.headingMd} ${utilStyles.topic}`}>Extras</p>
 
                 {/* covid */}
                 <div className={utilStyles.sectionColumn}>

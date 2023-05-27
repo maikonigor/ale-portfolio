@@ -6,7 +6,7 @@ export default function Resume() {
   let resumeURL = 'https://drive.google.com/file/d/1zjvrks4ZdD9SHdvNiQxcYKmGTXGVdH1P/view?usp=share_link';
   return (
     <Layout>
-      <div className={utilStyles.content}>
+      <div className={resumeStyle.content}>
         <p className={utilStyles.headingMd}>Resume</p>
 
         <h1 className={`${utilStyles.headingMd} ${resumeStyle.title} margin-top-2`}>ALEXSANDRA LOPES</h1>

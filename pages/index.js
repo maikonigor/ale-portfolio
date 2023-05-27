@@ -33,6 +33,7 @@ export default function Home() {
               delicious dishes with healthy (or not) plant
               based ingredients.
             </p>
+            
             <div className={homeStyles.socialButtonsContainer}>
               <div className={homeStyles.socialButtons}>
                 {
@@ -52,7 +53,7 @@ export default function Home() {
 
       {/* Projects section */}
       <div className={`${utilStyles.content} margin-top-2`}>
-        <p className={utilStyles.headingMd}>Projects</p>
+        <p className={`${utilStyles.headingMd} ${utilStyles.topic}`}>Projects</p>
 
         {/* Medlog */}
         <div className={utilStyles.sectionColumn}>
@@ -130,7 +131,7 @@ export default function Home() {
 
       {/* WORK */}
       <div className={utilStyles.content}>
-        <p className={utilStyles.headingMd}>WORK</p>
+        <p className={`${utilStyles.headingMd} ${utilStyles.topic}`}>WORK</p>
         <div className={homeStyles.workImages}>
           <Image src='/images/work.png' width={843.81} height={232} className={utilStyles.columImages}></Image>
         </div>
