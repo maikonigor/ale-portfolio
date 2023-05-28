@@ -6,12 +6,11 @@
 
 .header {
     width: 100%;
-    height: 94px;
+    min-height: 94px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 
 .nav {
     width: 100%;
@@ -21,6 +20,19 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+.logo {
+    margin-right: 3rem;
+}
+
+
+.menu {
+    width: 60%
+}
+
+.hamburgerIcon {
+    display: none;
 }
 
 .navitems {
@@ -45,7 +57,7 @@
     flex-grow: 1.2;
 }
 
-.active{
+.active {
     color: #B23F62;
 }
 
@@ -56,7 +68,7 @@
     color: #B23F62;
 }
 
-.body{
+.body {
     background-color: #FAFAFA;
 }
 
@@ -83,4 +95,68 @@
 
 .backToHome {
     margin: 3rem 0 0;
+}
+
+.mobileMenu {
+    display: none;
+}
+
+@media all and (max-width: 950px) {
+
+    .nav {
+        justify-content: space-between;
+        flex-wrap: wrap;
+        position: relative;
+        flex-direction: row-reverse;
+    }
+
+    .navitems {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 70%;
+        margin-top: 94px;
+
+    }
+
+    .hamburgerIcon {
+        display: inline-block;
+        cursor: pointer;
+        margin-left: 2rem;
+    }
+
+    .menu {
+        display: none;
+    }
+    
+    .mobileMenu {
+        
+        display: none;
+    }
+    
+    .showMobileMenu {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        background-color: #FFE8E8;
+        position: absolute;
+        height: 100%;
+        width: 50%;
+        left: 0;
+        animation: slideright 0.3s;
+    }
+
+    @keyframes slideright {
+        from {
+            left: -1000px;
+        }
+        to {
+            left: 0;
+        }
+    }
+
+    .logo {
+        margin-right: 2rem;
+    }
+
 }

@@ -4,6 +4,8 @@ import styles from './layout.module.css';
 import { Poppins } from 'next/font/google';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
+import HamburgerMenuIcon from './hamburger-menu/hamburgerMenu';
+import { useState } from 'react';
 
 const poppins = Poppins(
     {
@@ -29,6 +31,12 @@ const navItems =
 
 
 export default function Layout({ children, page }) {
+    const [isClose, setIsClose] = useState(true);
+
+    const openClass = isClose
+        ? `${styles.mobileMenu}`
+        : `${styles.mobileMenu} ${styles.showMobileMenu}`
+
     const router = useRouter();
     return (
         <div>
@@ -51,6 +59,19 @@ export default function Layout({ children, page }) {
                 <meta name="og:title" content={siteTitle} />
                 <meta name="twitter:card" content="summary_large_image" />
             </Head>
+            <div className={`${openClass}`}>
+                <ul className={styles.navitems}>
+                    {
+                        navItems.map((item, index) => {
+                            return (
+                                <li className={styles.navItem + ' ' + (item.route == router.pathname ? styles.active : '')}>
+                                    <Link href={item.route}>{item.title}</Link>
+                                </li>
+                            )
+                        })
+                    }
+                </ul>
+            </div>
             <header className={styles.header}>
                 <nav className={styles.nav}>
                     <Link href='/'>
@@ -59,20 +80,26 @@ export default function Layout({ children, page }) {
                             src="/images/logo.png"
                             height={31}
                             width={54}
+                            className={styles.logo}
                             alt="logo"
                         />
                     </Link>
-                    <ul className={styles.navitems}>
-                        {
-                            navItems.map((item, index) => {
-                                return (
-                                    <li className={styles.navItem +' '+ (item.route == router.pathname? styles.active:'')}>
-                                        <Link href={item.route}>{item.title}</Link>
-                                    </li>
-                                )
-                            })
-                        }
-                    </ul>
+
+                    <HamburgerMenuIcon className={styles.hamburgerIcon} onPress={() => setIsClose(!isClose)} ></HamburgerMenuIcon>
+                    
+                    <div className={styles.menu}>
+                        <ul className={styles.navitems}>
+                            {
+                                navItems.map((item, index) => {
+                                    return (
+                                        <li className={styles.navItem + ' ' + (item.route == router.pathname ? styles.active : '')}>
+                                            <Link href={item.route}>{item.title}</Link>
+                                        </li>
+                                    )
+                                })
+                            }
+                        </ul>
+                    </div>
 
                 </nav>
             </header>
