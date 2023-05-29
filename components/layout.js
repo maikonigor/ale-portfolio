@@ -6,6 +6,7 @@ import { useRouter } from 'next/router';
 import Link from 'next/link';
 import HamburgerMenuIcon from './hamburger-menu/hamburgerMenu';
 import { useState } from 'react';
+import LanguageButton from './language-button/languageButton';
 
 const poppins = Poppins(
     {
@@ -71,6 +72,7 @@ export default function Layout({ children, page }) {
                         })
                     }
                 </ul>
+                <LanguageButton></LanguageButton>
             </div>
             <header className={styles.header}>
                 <nav className={styles.nav}>
@@ -86,7 +88,7 @@ export default function Layout({ children, page }) {
                     </Link>
 
                     <HamburgerMenuIcon className={styles.hamburgerIcon} onPress={() => setIsClose(!isClose)} ></HamburgerMenuIcon>
-                    
+
                     <div className={styles.menu}>
                         <ul className={styles.navitems}>
                             {
@@ -100,7 +102,7 @@ export default function Layout({ children, page }) {
                             }
                         </ul>
                     </div>
-
+                    <LanguageButton className={styles.btnLang}></LanguageButton>
                 </nav>
             </header>
             <main className={styles.body}>{children}</main>
