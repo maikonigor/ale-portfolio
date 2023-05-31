@@ -15,12 +15,11 @@ export const siteTitle = 'Ale lopes portfolio';
 
 const navItems =
     [
-        { title: "Home", route: '/' },
-        { title: "Resume", route: '/resume/resume' },
-        { title: "projects", route: '#' },
+        { title: "projects", route: '/' },
         { title: "extras", route: '/extras/extras' },
-        { title: "about", route: '/about/about' },
+        { title: "Resume", route: '/resume/resume' },
         { title: "publications", route: '/publications/publications' },
+        { title: "about", route: '/about/about' },
     ]
 
 
