@@ -19,8 +19,14 @@ export default function Home() {
       <div className={homeStyles.introduction}>
         <div className={homeStyles.introductionContent}>
           <div className={homeStyles.column}>
+            <img
+              src='/images/profile.png'
+              className={homeStyles.profile}
+              alt='ale image'
+            />
+
             <div className={homeStyles.presentationHeader}>Hi, I'm <br /> Alexsandra Lopes</div>
-            <p className={homeStyles.goodToSee}>Good to see you here</p>
+            {/* <p className={homeStyles.goodToSee}>Good to see you here</p> */}
             <div className={homeStyles.btnResume}>Read my resume</div>
           </div>
           <div className={`${homeStyles.column}`}>
@@ -33,7 +39,7 @@ export default function Home() {
               delicious dishes with healthy (or not) plant
               based ingredients.
             </p>
-            
+            <p>Good to see you here</p>
             <div className={homeStyles.socialButtonsContainer}>
               <div className={homeStyles.socialButtons}>
                 {
@@ -53,7 +59,7 @@ export default function Home() {
 
       {/* Projects section */}
       <div className={`${utilStyles.content} margin-top-2`}>
-        <p className={`${utilStyles.headingMd} ${utilStyles.topic}`}>Projects</p>
+        <p className={`${utilStyles.headingMd} ${utilStyles.topic}`}>Main Projects</p>
 
         {/* Medlog */}
         <div className={utilStyles.sectionColumn}>
@@ -119,7 +125,7 @@ export default function Home() {
           <div className={utilStyles.sectionColumnDetail}>
             <p className={utilStyles.headingMd}>Extras </p>
             <div className={utilStyles.pills}>
-              <div className={homeStyles.otherpill}>OTHER DESIGNS</div>
+              <div className={utilStyles.otherpill}>OTHER DESIGNS</div>
             </div>
             <p>
               A collection of some creative moments I had. Here you can find some things that are not connected (directly) with my role, but some other type of designs I like to do just for fun, or to challenge myself and my creativity.
@@ -131,7 +137,7 @@ export default function Home() {
 
       {/* WORK */}
       <div className={utilStyles.content}>
-        <p className={`${utilStyles.headingMd} ${utilStyles.topic}`}>WORK</p>
+        <p className={`${utilStyles.headingMd} ${utilStyles.topic}`}>Work</p>
         <div className={homeStyles.workImages}>
           <Image src='/images/work.png' width={843.81} height={232} className={utilStyles.columImages}></Image>
         </div>
