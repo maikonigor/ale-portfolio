@@ -1,19 +1,12 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import styles from './layout.module.css';
-import { Poppins } from 'next/font/google';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 import HamburgerMenuIcon from './hamburger-menu/hamburgerMenu';
 import { useState } from 'react';
 import LanguageButton from './language-button/languageButton';
 
-const poppins = Poppins(
-    {
-        weight: '400',
-        subsets: ['latin'],
-    }
-);
 const name = 'Alê Lopes';
 export const siteTitle = 'Ale lopes portfolio';
 
