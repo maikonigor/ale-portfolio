@@ -1,0 +1,59 @@
+  .round {
+      cursor: pointer;
+      width: 108px;
+      height: 36px;
+      background: #FFE8E8;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      border-radius: 100px;
+      position: relative;
+  }
+
+  .backgroundColorPt{
+    background:#EAF2FA;
+    flex-direction: row-reverse;
+    
+  }
+
+  .backgroundColorEng{
+    background:#FFE8E8;
+  }
+
+  .label{
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  .ptbr{
+      color: #144F8A;
+    }
+    
+    .eng{
+      color: #B23F62;
+  }
+
+  .round:after {
+      background-image: url('/public/images/en-flag.png');
+      content: '';
+      position: absolute;
+      top: 2px;
+      left: 5px;
+      width: 32px;
+      height: 32px;
+      border-radius: 90px;
+      transition: 0.3s;
+  }
+
+  .inputCheckbox:checked+round {
+      background: #009c3b;
+  }
+
+  .inputCheckbox:checked+round:after {
+      left: calc(100% - 5px);
+      transform: translateX(-100%);
+  }
+
+  .round:active:after {
+      width: 130px;
+  }
