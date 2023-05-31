@@ -15,7 +15,7 @@ export const siteTitle = 'Ale lopes portfolio';
 
 const navItems =
     [
-        { title: "projects", route: '/' },
+        { title: "projects", route: '/projects/projects' },
         { title: "extras", route: '/extras/extras' },
         { title: "Resume", route: '/resume/resume' },
         { title: "publications", route: '/publications/publications' },
@@ -32,23 +32,18 @@ export default function Layout({ children, page }) {
 
     const router = useRouter();
     return (
-        <div>
+        <>
             <Head>
                 <title>Ale Lopes</title>
                 <link rel="icon" href="/favicon.ico" />
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
                 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"></link>
                 <meta
                     name="description"
                     content="Ale Lopes designer portfolio"
                 />
-                <meta
-                    property="og:image"
-                    content={`https://og-image.vercel.app/${encodeURI(
-                        siteTitle,
-                    )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
-                />
+                
                 <meta name="og:title" content={siteTitle} />
                 <meta name="twitter:card" content="summary_large_image" />
             </Head>
@@ -57,14 +52,13 @@ export default function Layout({ children, page }) {
                     {
                         navItems.map((item, index) => {
                             return (
-                                <li className={styles.navItem + ' ' + (item.route == router.pathname ? styles.active : '')}>
+                                <li key={`mob_${index}`} className={styles.navItem + ' ' + (item.route == router.pathname ? styles.active : '')}>
                                     <Link href={item.route}>{item.title}</Link>
                                 </li>
                             )
                         })
                     }
                 </ul>
-                <LanguageButton></LanguageButton>
             </div>
             <header className={styles.header}>
                 <nav className={styles.nav}>
@@ -79,14 +73,13 @@ export default function Layout({ children, page }) {
                         />
                     </Link>
 
-                    <HamburgerMenuIcon className={styles.hamburgerIcon} onPress={() => setIsClose(!isClose)} ></HamburgerMenuIcon>
 
                     <div className={styles.menu}>
                         <ul className={styles.navitems}>
                             {
                                 navItems.map((item, index) => {
                                     return (
-                                        <li className={styles.navItem + ' ' + (item.route == router.pathname ? styles.active : '')}>
+                                        <li key={index} className={styles.navItem + ' ' + (item.route == router.pathname ? styles.active : '')}>
                                             <Link href={item.route}>{item.title}</Link>
                                         </li>
                                     )
@@ -95,6 +88,7 @@ export default function Layout({ children, page }) {
                         </ul>
                     </div>
                     <LanguageButton className={styles.btnLang}></LanguageButton>
+                    <HamburgerMenuIcon className={styles.hamburgerIcon} onPress={() => setIsClose(!isClose)} ></HamburgerMenuIcon>
                 </nav>
             </header>
             <main className={styles.body}>{children}</main>
@@ -103,6 +97,6 @@ export default function Layout({ children, page }) {
                 <p>Developed by Maikon Soares</p>
                 <p className={styles.textBlack80}>Alexsandra Lopes • 2023</p>
             </footer>
-        </div>
+        </>
     );
 }

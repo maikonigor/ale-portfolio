@@ -21,10 +21,10 @@ export default function Resume() {
         <section className='margin-top-2' >
           <p className={resumeStyle.subtitle}>Summary</p>
           <ul className={`${resumeStyle.list} ${resumeStyle.textInfo} margin-left-2`}>
-            <li>Experienced UX/UI Designer with 3 years of experience and a background in Linguistics-Literature and Interior Design.</li>
-            <li>Proficient in Figma, Adobe XD, UX Design processes, UI Design, Design Sprints and. Skilled in UX Research methods. Great communication with the Development team.</li>
-            <li>Demonstrate good experience on communication and design negotiation with stakeholders, UX Writing, Agile Methods, Design System, ChatGPT for UX, Design documentation and Handoff.</li>
-            <li>Strong soft skills such as organization, leadership, empathy, self-governance, helpfulness, creativity, and fast learning. Effective communication and empathy skills enhance user-centered design solutions.</li>
+            <li key={"1"}>Experienced UX/UI Designer with 3 years of experience and a background in Linguistics-Literature and Interior Design.</li>
+            <li key={"2"}>Proficient in Figma, Adobe XD, UX Design processes, UI Design, Design Sprints and. Skilled in UX Research methods. Great communication with the Development team.</li>
+            <li key={"3"}>Demonstrate good experience on communication and design negotiation with stakeholders, UX Writing, Agile Methods, Design System, ChatGPT for UX, Design documentation and Handoff.</li>
+            <li key={"4"}>Strong soft skills such as organization, leadership, empathy, self-governance, helpfulness, creativity, and fast learning. Effective communication and empathy skills enhance user-centered design solutions.</li>
           </ul>
         </section>
 
@@ -35,26 +35,26 @@ export default function Resume() {
           <p className={resumeStyle.workplace}>INTMED SOFTWARE</p>
           <p className={resumeStyle.textInfo}>UX/UI DESIGNER - SINCE APRIL 2022</p>
           <ul className={`${resumeStyle.list} ${resumeStyle.textInfo} margin-left-2`}>
-            <li>Creating solutions for health-oriented web systems that improved the experience and productivity of the client's team. Creation of user flows, high fidelity prototypes, UX writing, handoffs, Design System maintenance. Experience with Agile Spotify Model.</li>
-            <li>Presentations for clients, design training for development and design teams to develop Figma and ChatGPT skills. Research for internal projects, systems documentation for the project team, heuristic analysis and creation of internal processes.</li>
-            <li>Results: improvement of design team processes, better organization and productivity of the Design Team, better communication design-development and reducing the time of production processes. Improvement of products based on good communication with stakeholders and the Business Team. Implement Design Processes on teams.</li>
-            <li>Skills: Figma, Design Sprints, Kanban, Azure, ChatGPT, User Centered Design, Workshops, Communication with Stakeholders, Leadership.</li>
+            <li key={"5"}>Creating solutions for health-oriented web systems that improved the experience and productivity of the client's team. Creation of user flows, high fidelity prototypes, UX writing, handoffs, Design System maintenance. Experience with Agile Spotify Model.</li>
+            <li key={"6"}>Presentations for clients, design training for development and design teams to develop Figma and ChatGPT skills. Research for internal projects, systems documentation for the project team, heuristic analysis and creation of internal processes.</li>
+            <li key={"7"}>Results: improvement of design team processes, better organization and productivity of the Design Team, better communication design-development and reducing the time of production processes. Improvement of products based on good communication with stakeholders and the Business Team. Implement Design Processes on teams.</li>
+            <li key={"8"}>Skills: Figma, Design Sprints, Kanban, Azure, ChatGPT, User Centered Design, Workshops, Communication with Stakeholders, Leadership.</li>
           </ul>
 
           <p className={`${resumeStyle.workplace} margin-top-2`}>iDUN SAÚDE</p>
           <p className={resumeStyle.textInfo}>UX/UI DESIGNER - JULY 2021 / APRIL 2022</p>
           <ul className={`${resumeStyle.list} ${resumeStyle.textInfo} margin-left-2`}>
-            <li>Creation of solutions for health-oriented web and mobile applications.</li>
-            <li>Creation of high fidelity prototypes for web and mobile, illustrations and direct communication with development.</li>
-            <li>Skills: Figma, Adobe XD, Design Sprints, Kanban, Jira, User Centered Design.</li>
+            <li key={"9"}>Creation of solutions for health-oriented web and mobile applications.</li>
+            <li key={"10"}>Creation of high fidelity prototypes for web and mobile, illustrations and direct communication with development.</li>
+            <li key={"11"}>Skills: Figma, Adobe XD, Design Sprints, Kanban, Jira, User Centered Design.</li>
           </ul>
 
           <p className={`${resumeStyle.workplace} margin-top-2`}>ARGO SOLUÇÕES</p>
           <p className={resumeStyle.textInfo}>UX/UI DESIGNER - SEPTEMBER 2020  / OCTOBER 2021</p>
           <ul className={`${resumeStyle.list} ${resumeStyle.textInfo} margin-left-2`}>
-            <li>Creation of solutions for many types of web and mobile systems, such as food delivery, landing pages, social media app and dashboards.</li>
-            <li>Creation of high fidelity prototypes, illustrations and direct communication with Development.</li>
-            <li>Skills: Figma, Adobe XD, Design Sprints, Kanban, Jira, User-Centered Design.</li>
+            <li key={"12"}>Creation of solutions for many types of web and mobile systems, such as food delivery, landing pages, social media app and dashboards.</li>
+            <li key={"13"}>Creation of high fidelity prototypes, illustrations and direct communication with Development.</li>
+            <li key={"14"}>Skills: Figma, Adobe XD, Design Sprints, Kanban, Jira, User-Centered Design.</li>
           </ul>
         </section>
 
