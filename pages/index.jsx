@@ -4,6 +4,7 @@ import utilStyles from '../styles/utils.module.css';
 import homeStyles from '../styles/Home.module.css'
 import { useRouter } from 'next/router';
 import useTranslation from 'next-translate/useTranslation'
+import Link from 'next/link';
 const socialButtons = [
 
   { img: '/images/behance.png', url: 'https://behance.net/alexsandralopes' },
@@ -16,8 +17,8 @@ const socialButtons = [
 
 
 export default function Home() {
-const {locale} = useRouter();
-  const {t} = useTranslation("home");
+  const { locale } = useRouter();
+  const { t } = useTranslation("home");
 
   return (
     <>
@@ -33,7 +34,9 @@ const {locale} = useRouter();
 
               <div className={homeStyles.presentationHeader}>{t('welcome')} <br /> Alexsandra Lopes</div>
               {/* <p className={homeStyles.goodToSee}>Good to see you here</p> */}
-              <div className={homeStyles.btnResume}>{t('resumeButton')}</div>
+              <Link href="/resume/resume" lang={locale}>
+                <div className={homeStyles.btnResume}>{t('resumeButton')}</div>
+              </Link>
             </div>
             <div className={`${homeStyles.column}`}>
               <p className={homeStyles.introductionText}>
@@ -114,7 +117,7 @@ const {locale} = useRouter();
                 <div className={`${utilStyles.pill} ${utilStyles.mobilepill}`}>mobile</div>
               </div>
               <p>
-              {t('goodReadsText')}
+                {t('goodReadsText')}
               </p>
             </div>
           </div>
