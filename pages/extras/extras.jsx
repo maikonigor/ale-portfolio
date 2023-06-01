@@ -69,19 +69,7 @@ export default function Extras() {
                     </div>
                 </div>
 
-                {/* MAR ABERTO */}
-                <div className={utilStyles.sectionColumn}>
-                    <Image src='/images/mar-aberto.png' width={560} height={400} className={utilStyles.columImages} />
-                    <div className={utilStyles.sectionColumnDetail}>
-                        <p className={utilStyles.headingMd}>Mar Aberto - Landing Page </p>
-                        <div className={utilStyles.pills}>
-                            <div className={`${utilStyles.pill} ${utilStyles.otherpill}`}>others</div>
-                        </div>
-                        <p>
-                         {t('marAberto')}
-                        </p>
-                    </div>
-                </div>
+                
 
             </div>
         </Layout>
