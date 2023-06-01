@@ -71,6 +71,7 @@
 
 .body {
     background-color: #FAFAFA;
+    padding-bottom: 48px;
 }
 
 .footer {
@@ -87,7 +88,7 @@
     line-height: 36px;
     text-align: center;
     letter-spacing: 0.385714px;
-    margin-top: 50px;
+    /* margin-top: 50px; */
 }
 
 .textBlack80 {
