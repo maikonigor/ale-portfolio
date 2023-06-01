@@ -6,31 +6,30 @@ import Link from 'next/link';
 import HamburgerMenuIcon from './hamburger-menu/hamburgerMenu';
 import { useState } from 'react';
 import LanguageButton from './language-button/languageButton';
+import useTranslation from 'next-translate/useTranslation';
 
 const name = 'Alê Lopes';
 export const siteTitle = 'Ale lopes portfolio';
-
-
-
 
 const navItems =
     [
         { title: "projects", route: '/projects/projects' },
         { title: "extras", route: '/extras/extras' },
-        { title: "Resume", route: '/resume/resume' },
+        { title: "resume", route: '/resume/resume' },
         { title: "publications", route: '/publications/publications' },
         { title: "about", route: '/about/about' },
     ]
 
-
-export default function Layout({ children, page }) {
+export default function Layout({ children }) {
+    const {t} = useTranslation("common")
     const [isClose, setIsClose] = useState(true);
+    const router = useRouter();
+
 
     const openClass = isClose
         ? `${styles.mobileMenu}`
         : `${styles.mobileMenu} ${styles.showMobileMenu}`
 
-    const router = useRouter();
     return (
         <>
             <Head>
@@ -43,7 +42,7 @@ export default function Layout({ children, page }) {
                     name="description"
                     content="Ale Lopes designer portfolio"
                 />
-                
+
                 <meta name="og:title" content={siteTitle} />
                 <meta name="twitter:card" content="summary_large_image" />
             </Head>
@@ -53,7 +52,7 @@ export default function Layout({ children, page }) {
                         navItems.map((item, index) => {
                             return (
                                 <li key={`mob_${index}`} className={styles.navItem + ' ' + (item.route == router.pathname ? styles.active : '')}>
-                                    <Link href={item.route}>{item.title}</Link>
+                                    <Link href={item.route}>{t(item.title)}</Link>
                                 </li>
                             )
                         })
@@ -80,7 +79,7 @@ export default function Layout({ children, page }) {
                                 navItems.map((item, index) => {
                                     return (
                                         <li key={index} className={styles.navItem + ' ' + (item.route == router.pathname ? styles.active : '')}>
-                                            <Link href={item.route}>{item.title}</Link>
+                                            <Link href={item.route}>{t(item.title)}</Link>
                                         </li>
                                     )
                                 })
