@@ -1,8 +1,10 @@
 import Image from 'next/image';
 import Layout from '../../components/layout';
 import utilStyles from '../../styles/utils.module.css';
+import useTranslation from 'next-translate/useTranslation'
 
 export default function Extras() {
+    const {t} = useTranslation("extras");
     return (
         <Layout>
             <div className={utilStyles.content}>
@@ -12,14 +14,13 @@ export default function Extras() {
                 <div className={utilStyles.sectionColumn}>
                     <Image src='/images/covid19.png' width={560} height={400} className={utilStyles.columImages} />
                     <div className={utilStyles.sectionColumnDetail}>
-                        <p className={utilStyles.headingMd}>Covid-19 - Ilustrations </p>
+                        <p className={utilStyles.headingMd}>{t('covid')} </p>
                         <div className={utilStyles.pills}>
                             <div className={utilStyles.webpill}>WEB</div>
                             <div className={utilStyles.mobilepill}>MOBILE</div>
                         </div>
                         <p>
-                            Simbora is a food delivery service platform that connects customers with local restaurants and cuisines. It offers fast, convenient,
-                            and affordable delivery options for any taste. Simbora makes ordering food easy and enjoyable.
+                            {t('covidText')}
                         </p>
                     </div>
                 </div>
@@ -29,12 +30,12 @@ export default function Extras() {
                 <div className={utilStyles.sectionColumn}>
                     <Image src='/images/bauhausbook.png' width={560} height={400} className={utilStyles.columImages} />
                     <div className={utilStyles.sectionColumnDetail}>
-                        <p className={utilStyles.headingMd}>ABC da Bauhaus - Book Cover </p>
+                        <p className={utilStyles.headingMd}>{t('bauhaus')} </p>
                         <div className={utilStyles.pills}>
                             <div className={utilStyles.otherpill}>OTHER DESIGNS</div>
                         </div>
                         <p>
-                        This study case solves some interface, visual hierarchy and flow issues found on GoodReads app. I simplified the process of editing profile, resulting in a better user experience and interface.
+                         {t('bauhausText')}
                         </p>
                     </div>
                 </div>
@@ -44,12 +45,12 @@ export default function Extras() {
                 <div className={utilStyles.sectionColumn}>
                     <Image src='/images/pride-prejudice.png' width={560} height={400} className={utilStyles.columImages} />
                     <div className={utilStyles.sectionColumnDetail}>
-                        <p className={utilStyles.headingMd}>Pride and Prejudice - Book cover </p>
+                        <p className={utilStyles.headingMd}>{t('pp')} </p>
                         <div className={utilStyles.pills}>
                             <div className={utilStyles.otherpill}>OTHER DESIGNS</div>
                         </div>
                         <p>
-                        Delivery management platform that offers order, customer, driver, and vehicle management, route optimization, real-time tracking, and dashboard bi, which works for any delivery business.
+                        {t('ppText')}
                         </p>
                     </div>
                 </div>
@@ -63,7 +64,7 @@ export default function Extras() {
                             <div className={utilStyles.webpill}>WEB</div>
                         </div>
                         <p>
-                        This study case solves some interface, visual hierarchy and flow issues found on GoodReads app. I simplified the process of editing profile, resulting in a better user experience and interface.
+                            {t('veganildos')}
                         </p>
                     </div>
                 </div>
@@ -77,7 +78,7 @@ export default function Extras() {
                             <div className={utilStyles.otherpill}>OTHER DESIGNS</div>
                         </div>
                         <p>
-                        A collection of some creative moments I had. Here you can find some things that are not connected (directly) with my role, but some other type of designs I like to do just for fun, or to challenge myself and my creativity.
+                         {t('marAberto')}
                         </p>
                     </div>
                 </div>

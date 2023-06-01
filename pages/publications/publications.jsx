@@ -1,12 +1,14 @@
 import Image from 'next/image';
 import Layout from '../../components/layout';
 import utilStyles from '../../styles/utils.module.css';
+import useTranslation from 'next-translate/useTranslation';
 
 export default function Publications() {
+    const {t} = useTranslation("publications")
     return (
         <Layout>
             <div className={utilStyles.content}>
-                <p className={`${utilStyles.headingMd} ${utilStyles.topic}`}>Publications</p>
+                <p className={`${utilStyles.headingMd} ${utilStyles.topic}`}>{t('publications')}</p>
 
                 {/* covid */}
                 <div className={utilStyles.sectionColumn}>

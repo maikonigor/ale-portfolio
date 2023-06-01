@@ -1,17 +1,20 @@
 import { useState } from 'react'
 import style from './languageButton.module.css'
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 export default function LanguageButton({ className, onPress }) {
-    const [language, setLanguage] = useState(false);
+    const router = useRouter();
+    const [language, setLanguage] = useState(router.locale=='pt-br');
 
-    const [label,labelClass,imgSide,backgroundColor, img ] = 
+    const [languageLabel, label,labelClass,backgroundColor, img ] = 
     language
-    ? ['ptbr',`${style.ptbr}`, `${style.imgLeft}`, `${style.backgroundColorPt}`, 'br-flag.png']
-    : ['eng', `${style.eng}`, `${style.imgRight}`, `${style.backgroundColorEng}`, 'en-flag.png']
+    ? ['pt-br','ptbr',`${style.ptbr}`, `${style.backgroundColorPt}`, 'br-flag.png']
+    : ['en', 'eng', `${style.eng}`, `${style.backgroundColorEng}`, 'en-flag.png']
 
     const handleClick = ()=>{
         setLanguage(!language);
-        onPress;
+        const l = router.locale=='pt-br' ? 'en' : 'pt-br';
+        router.push(router.asPath, undefined, {locale:l})
     }
 
     return (
@@ -22,6 +25,7 @@ export default function LanguageButton({ className, onPress }) {
                     src={`/images/${img}`}
                     width={32}
                     height={32}
+                    alt={img}
                     className={style.imgLeft}></Image>
             </div>
         </>

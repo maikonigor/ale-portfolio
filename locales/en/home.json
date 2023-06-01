@@ -1,0 +1,15 @@
+{
+    "welcome": "Hi, I'm",
+    "introduction": "I’m a UX/UI designer who creates user-friendly and userful digital products. I’m empathetic, curious, and creative. When I’m not designing, you can find me sipping coffee, reading books, cuddling with cats, or skating with my inline rollerblades around town. I’m also vegan, wine lover, and a cooking fan who likes to whip up delicious dishes with healthy (or not) plant based ingredients.",
+    "compliment": "Good to see you here",
+    "resumeButton": "Read my resume",
+    "projectTitle": "Main Projects",
+    "medLogTitle": "Hospital Multi Platfoms Login",
+    "medLogtext": "A platform that concentrates many different hospital contexts to each type of treatment. Here the health professionals can do just one sign in to access many platform according their health context.",
+    "simboraLP": "Delivery management platform that offers order, customer, driver, and vehicle management, route optimization, real-time tracking, and dashboard bi, which works for any delivery business.",
+    "simboraDelivery":"Simbora is a food delivery service platform that connects customers with local restaurants and cuisines. It offers fast, convenient, and affordable delivery options for any taste. Simbora makes ordering food easy and enjoyable.",
+    "goodReadsTitle":"GoodReads - Studt Case",
+    "goodReadsText":"This study case solves some interface, visual hierarchy and flow issues found on GoodReads app. I simplified the process of editing profile, resulting in a better user experience and interface.",
+    "extrasText": "A collection of some creative moments I had. Here you can find some things that are not connected (directly) with my role, but some other type of designs I like to do just for fun, or to challenge myself and my creativity.",
+    "work": "Work"
+}
