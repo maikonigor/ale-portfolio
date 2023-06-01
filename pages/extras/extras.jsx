@@ -16,8 +16,8 @@ export default function Extras() {
                     <div className={utilStyles.sectionColumnDetail}>
                         <p className={utilStyles.headingMd}>{t('covid')} </p>
                         <div className={utilStyles.pills}>
-                            <div className={utilStyles.webpill}>WEB</div>
-                            <div className={utilStyles.mobilepill}>MOBILE</div>
+                            <div className={`${utilStyles.pill} ${utilStyles.webpill}`}>WEB</div>
+                            <div className={`${utilStyles.pill} ${utilStyles.mobilepill}`}>MOBILE</div>
                         </div>
                         <p>
                             {t('covidText')}
@@ -32,7 +32,7 @@ export default function Extras() {
                     <div className={utilStyles.sectionColumnDetail}>
                         <p className={utilStyles.headingMd}>{t('bauhaus')} </p>
                         <div className={utilStyles.pills}>
-                            <div className={utilStyles.otherpill}>OTHER DESIGNS</div>
+                             <div className={`${utilStyles.pill} ${utilStyles.bookpill}`}>book cover</div>
                         </div>
                         <p>
                          {t('bauhausText')}
@@ -47,7 +47,7 @@ export default function Extras() {
                     <div className={utilStyles.sectionColumnDetail}>
                         <p className={utilStyles.headingMd}>{t('pp')} </p>
                         <div className={utilStyles.pills}>
-                            <div className={utilStyles.otherpill}>OTHER DESIGNS</div>
+                             <div className={`${utilStyles.pill} ${utilStyles.bookpill}`}>book cover</div>
                         </div>
                         <p>
                         {t('ppText')}
@@ -61,7 +61,7 @@ export default function Extras() {
                     <div className={utilStyles.sectionColumnDetail}>
                         <p className={utilStyles.headingMd}>Veganildos Podcast - Logo </p>
                         <div className={utilStyles.pills}>
-                            <div className={utilStyles.webpill}>WEB</div>
+                            <div className={`${utilStyles.pill} ${utilStyles.webpill}`}>web</div>
                         </div>
                         <p>
                             {t('veganildos')}
@@ -75,7 +75,7 @@ export default function Extras() {
                     <div className={utilStyles.sectionColumnDetail}>
                         <p className={utilStyles.headingMd}>Mar Aberto - Landing Page </p>
                         <div className={utilStyles.pills}>
-                            <div className={utilStyles.otherpill}>OTHER DESIGNS</div>
+                            <div className={`${utilStyles.pill} ${utilStyles.otherpill}`}>others</div>
                         </div>
                         <p>
                          {t('marAberto')}

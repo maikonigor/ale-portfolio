@@ -100,41 +100,37 @@
   padding: 5px;
 }
 
-.webpill {
+.pill{
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 2px 16px;
   gap: 10px;
-  width: 79px;
   height: 37px;
   border-radius: 20px;
+  text-transform: capitalize;
+  font-size: 12px;
+}
+
+.webpill {
   color: #144F8A;
   background-color: #EAF2FA;
 }
 
 .mobilepill {
-  margin-left: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2px 16px;
-  gap: 10px;
-  border-radius: 20px;
   color: #B23F62;
   background-color: #FFE8E8;
+  margin-left: 10px;
 }
 
 .otherpill {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2px 16px;
-  gap: 10px;
-  height: 37px;
-  border-radius: 20px;
   color: #484848;
   background-color: #E8E8E8;
+}
+
+.bookpill {
+  color: #D47722;
+  background-color: #FFE7D0;
 }
 
 @media all and (max-width: 1150px) {

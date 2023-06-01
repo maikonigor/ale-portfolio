@@ -67,7 +67,7 @@ const {locale} = useRouter();
             <div className={utilStyles.sectionColumnDetail}>
               <p className={utilStyles.headingMd}>{t('medLogTitle')} </p>
               <div className={utilStyles.pills}>
-                <div className={utilStyles.webpill}>WEB</div>
+                <div className={`${utilStyles.pill} ${utilStyles.webpill}`}>web</div>
               </div>
               <p>
                 {t('medLogtext')}
@@ -81,8 +81,8 @@ const {locale} = useRouter();
             <div className={utilStyles.sectionColumnDetail}>
               <p className={utilStyles.headingMd}>Simbora - Landing Page </p>
               <div className={utilStyles.pills}>
-                <div className={utilStyles.webpill}>WEB</div>
-                <div className={utilStyles.mobilepill}>MOBILE</div>
+                <div className={`${utilStyles.pill} ${utilStyles.webpill}`}>web</div>
+                <div className={`${utilStyles.pill} ${utilStyles.mobilepill}`}>mobile</div>
               </div>
               <p>
                 {t('simboraLP')}
@@ -96,8 +96,8 @@ const {locale} = useRouter();
             <div className={utilStyles.sectionColumnDetail}>
               <p className={utilStyles.headingMd}>Simbora Delivery</p>
               <div className={utilStyles.pills}>
-                <div className={utilStyles.webpill}>WEB</div>
-                <div className={utilStyles.mobilepill}>MOBILE</div>
+                <div className={`${utilStyles.pill} ${utilStyles.webpill}`}>web</div>
+                <div className={`${utilStyles.pill} ${utilStyles.mobilepill}`}>mobile</div>
               </div>
               <p>
                 {t('simboraDelivery')}
@@ -111,7 +111,7 @@ const {locale} = useRouter();
             <div className={utilStyles.sectionColumnDetail}>
               <p className={utilStyles.headingMd}>{t('goodReadsTitle')}</p>
               <div className={utilStyles.pills}>
-                <div className={utilStyles.mobilepill}>MOBILE</div>
+                <div className={`${utilStyles.pill} ${utilStyles.mobilepill}`}>mobile</div>
               </div>
               <p>
               {t('goodReadsText')}
@@ -125,7 +125,7 @@ const {locale} = useRouter();
             <div className={utilStyles.sectionColumnDetail}>
               <p className={utilStyles.headingMd}>Extras </p>
               <div className={utilStyles.pills}>
-                <div className={utilStyles.otherpill}>OTHER DESIGNS</div>
+                <div className={`${utilStyles.pill} ${utilStyles.bookpill}`}>book cover</div>
               </div>
               <p>
                 {t('extrasText')}
