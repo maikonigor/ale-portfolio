@@ -1,0 +1,70 @@
+.content {
+    width: 70%;
+    margin-left: 15%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.385714px;
+    color: #767676;
+}
+
+.backLink {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.03em;
+    color: #B23F62;
+}
+
+.abstract {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 3rem;
+
+}
+
+.abstract div {
+    display: flex;
+    align-items: center;
+    flex-basis: 1;
+    padding: 0.5rem;
+}
+
+.status {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+}
+
+.inProgress {
+    color: #B23F62;
+}
+
+.finished {
+    color: #144F8A;
+}
+
+.medlogColumnImages{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+@media all and (max-width: 1150px) {
+    .medlogColumnImages{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .medlogColumnImages img{
+        margin-top: 1rem;
+    }
+}
