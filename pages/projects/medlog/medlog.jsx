@@ -3,6 +3,7 @@ import utilStyles from '../../../styles/utils.module.css'
 import useTranslation from 'next-translate/useTranslation'
 import Image from 'next/image';
 import Layout from '../../../components/layout';
+import { BackButton } from '../../../components/back-button/back-button';
 
 export default function Medlog() {
     const { t } = useTranslation("medlog");
@@ -10,10 +11,10 @@ export default function Medlog() {
     return (
         <Layout>
             <div className={styles.content}>
-                <div className={styles.backLink}>
-                    <Image src="/icons/arrow-left.svg" width={12} height={12}></Image>
-                    <span className='margin-left-1'>{commonTranslation('backProjects')}</span>
-                </div>
+                <BackButton
+                    url="/projects/projects"
+                    text={commonTranslation('backProjects')}
+                ></BackButton>
 
                 <h1 className={`${utilStyles.headingMd} margin-top-3`}>{t('title')}</h1>
                 <center>
