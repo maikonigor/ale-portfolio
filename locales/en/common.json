@@ -7,5 +7,6 @@
     "backProjects": "Back to projects",
     "status": "Status",
     "year": "Year",
-    "inProgress": "In progress"
+    "inProgress": "In progress",
+    "finished": "Finished"
 }
