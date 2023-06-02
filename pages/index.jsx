@@ -66,7 +66,7 @@ export default function Home() {
 
           {/* Medlog */}
           <div className={utilStyles.sectionColumn}>
-            <Image src='/images/medlog.png' width={560} height={400} className={utilStyles.columImages} />
+            <Image src='/images/medlog.svg' width={560} height={400} className={utilStyles.columImages} />
             <div className={utilStyles.sectionColumnDetail}>
               <p className={utilStyles.headingMd}>{t('medLogTitle')} </p>
               <div className={utilStyles.pills}>

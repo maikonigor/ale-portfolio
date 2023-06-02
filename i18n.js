@@ -6,6 +6,7 @@ module.exports = {
 		"*": ["common"],
 		"/": ["home"],
 		"/projects/projects": ["projects"],
+		"/projects/medlog/medlog": ["common","medlog"],
 		"/extras/extras": ["extras"],
 		"/about/about": ["about"],
 		"/publications/publications": ["publications"],

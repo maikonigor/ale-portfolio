@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Layout from '../../components/layout';
 import utilStyles from '../../styles/utils.module.css';
 import useTranslation from 'next-translate/useTranslation'
+import Link from 'next/link';
 
 export default function Projects() {
     const { t } = useTranslation("projects");
@@ -11,18 +12,20 @@ export default function Projects() {
                 <p className={`${utilStyles.headingMd} ${utilStyles.topic}`}>{t('title')}</p>
 
                 {/* Medlog */}
-                <div className={utilStyles.sectionColumn}>
-                    <Image src='/images/medlog.png' width={560} height={400} className={utilStyles.columImages} />
-                    <div className={utilStyles.sectionColumnDetail}>
-                        <p className={utilStyles.headingMd}>{t('medLogTitle')} </p>
-                        <div className={utilStyles.pills}>
-                            <div className={`${utilStyles.pill} ${utilStyles.webpill}`}>web</div>
+                <Link href="/projects/medlog/medlog">
+                    <div className={utilStyles.sectionColumn}>
+                        <Image src='/images/medlog.svg' width={560} height={400} className={utilStyles.columImages} />
+                        <div className={utilStyles.sectionColumnDetail}>
+                            <p className={utilStyles.headingMd}>{t('medLogTitle')} </p>
+                            <div className={utilStyles.pills}>
+                                <div className={`${utilStyles.pill} ${utilStyles.webpill}`}>web</div>
+                            </div>
+                            <p>
+                                {t('medLogtext')}
+                            </p>
                         </div>
-                        <p>
-                            {t('medLogtext')}
-                        </p>
                     </div>
-                </div>
+                </Link>
 
                 {/* Simbora landing page */}
                 <div className={utilStyles.sectionColumn}>
@@ -77,7 +80,7 @@ export default function Projects() {
                             <div className={`${utilStyles.pill} ${utilStyles.otherpill}`}>others</div>
                         </div>
                         <p>
-                         {t('marAberto')}
+                            {t('marAberto')}
                         </p>
                     </div>
                 </div>

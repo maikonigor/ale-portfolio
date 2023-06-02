@@ -3,5 +3,10 @@
     "extras":"extras",
     "resume":"currículo",
     "publications":"publicações",
-    "about":"sobre"
+    "about":"sobre",
+    "backProjects": "Voltar aos projetos",
+    "status": "Status",
+    "year": "Ano",
+    "inProgress": "Em andamento"
+
 }

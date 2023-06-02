@@ -50,6 +50,11 @@
   margin: 0 0 1.25rem;
 }
 
+.numericList{
+  list-style: decimal;
+  line-height: 36px
+}
+
 .lightText {
   color: #666;
 }
@@ -61,6 +66,7 @@
 .content {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .topic{
