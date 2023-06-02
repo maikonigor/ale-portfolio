@@ -1,5 +1,4 @@
 .backLink {
-    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -9,4 +8,8 @@
     line-height: 150%;
     letter-spacing: -0.03em;
     color: #B23F62;
+}
+
+.backIcon{
+    width: 3rem;
 }
