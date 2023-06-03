@@ -1,0 +1,90 @@
+.content {
+    width: 70%;
+    margin-left: 15%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.385714px;
+    color: #767676;
+}
+
+.title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.title div{
+    padding: 1rem;
+}
+
+.abstract {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 3rem;
+
+}
+
+.abstract div {
+    display: flex;
+    align-items: center;
+    flex-basis: 1;
+    padding: 0.5rem;
+}
+
+.status {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+}
+
+.inProgress {
+    color: #B23F62;
+}
+
+.finished {
+    color: #144F8A;
+}
+
+.medlogColumnImages {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top:3rem;
+}
+
+.slpbtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 28px;
+    gap: 16px;
+    max-width: 398px;
+    min-height: 62px;
+    background: #144F8A;
+    border-radius: 12px;
+    flex: none;
+    order: 13;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-wrap: wrap;
+    color: #EAF2FA;
+    cursor: pointer;
+}
+
+
+@media all and (max-width: 1150px) {
+    .medlogColumnImages {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .medlogColumnImages img {
+        margin-top: 1rem;
+    }
+}

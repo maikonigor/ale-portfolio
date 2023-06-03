@@ -3,5 +3,10 @@
     "extras":"extras",
     "resume":"resume",
     "publications":"publications",
-    "about":"about"
+    "about":"about",
+    "backProjects": "Back to projects",
+    "status": "Status",
+    "year": "Year",
+    "inProgress": "In progress",
+    "finished": "Finished"
 }

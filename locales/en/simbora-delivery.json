@@ -1,0 +1,17 @@
+{
+    "title": "Simbora Delivery",
+    "abstract": "Simbora Delivery is a food delivery platform that connects customers with local restaurants through deliverymen. The platform consists of three user apps: a dashboard for restaurants to manage their orders and menus, an app for deliverymen to accept and complete deliveries, and an app for customers to browse, order, and pay for food.",
+    "briefing": "Briefing",
+    "briefingP1": "I started by understanding the goals, needs, and expectations of the client and the users for each app. I asked questions such as: What are the main features and functionalities of each app? Who are the target users and what are their pain points and preferences? What are the branding guidelines and style preferences? Do you know who are the competitors?",
+    "benchmarking":"Benchmarking",
+    "benchmarkingP1":"I conducted a competitive analysis of similar or relevant food delivery platforms to identify best practices, trends, and gaps. I looked at aspects such as: design, usability, features, and user satisfaction. I identified points that we could offer on user interface, improving the layout comparing with some competitors.",
+    "designing": "Designing",
+    "designingP1": "I created medium fidelity sketches or mockups of the user interface structure and layout for each app. I used tools such as Figma or Sketch to create wireframes that were clear, simple, and consistent. I focused on the user flow, hierarchy, and alignment of the elements.",
+    "designingP2": "I created custom illustrations for each app to enhance the user interface and communicate the brand identity and personality. I used tools Figma to create vector illustrations that were consistent with the style and theme of each app. I added these illustrations to the some screens. I collect some other elements such as icons and minimalistic flat illustrations to compose other screens.",
+    "designingP3": "I transformed my medium fidelity wireframes into high fidelity prototypes that resembled the final product. I added colors, fonts, images, icons, illustrations and animations to create a visually appealing and engaging user interface for each app. Here I used Material Design as base to make the components. I used  Figma to create interactive prototypes and visual elements that could be viewed and tested on different devices. ",
+    "client": "App - Client",
+    "deliveryman": "App - Deliveryman",
+    "restaurant": "Dashboard - Restaurants",
+    "conclusion": "Conclusion",
+    "conclusionP1": "This is how I designed the user interface of Simbora Delivery, a food delivery platform that offers a seamless and satisfying experience for customers, restaurants, and deliverymen. Here I learned some UI principles and some UX good practices. "
+}

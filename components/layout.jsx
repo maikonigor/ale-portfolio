@@ -25,10 +25,16 @@ export default function Layout({ children }) {
     const [isClose, setIsClose] = useState(true);
     const router = useRouter();
 
-
     const openClass = isClose
         ? `${styles.mobileMenu}`
         : `${styles.mobileMenu} ${styles.showMobileMenu}`
+
+    const isRouteActive = (route)=>{
+        const splitedRouter = router.pathname.split("/");
+        const splitedRoute = route.split('/')
+
+        return splitedRouter[1] == splitedRoute[1];
+    }
 
     return (
         <>
@@ -78,7 +84,7 @@ export default function Layout({ children }) {
                             {
                                 navItems.map((item, index) => {
                                     return (
-                                        <li key={index} className={styles.navItem + ' ' + (item.route == router.pathname ? styles.active : '')}>
+                                        <li key={index} className={styles.navItem + ' ' + (isRouteActive(item.route) ? styles.active : '')}>
                                             <Link href={item.route}>{t(item.title)}</Link>
                                         </li>
                                     )
