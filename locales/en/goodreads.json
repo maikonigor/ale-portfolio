@@ -5,7 +5,7 @@
     "context": "The context",
     "contextP1": "The Goodreads application has the function of cataloging books, reading and writing book reviews, evaluating books, and discovering new readings. In addition, it works as a social network, where you can follow people and see their activities, and also participate in reading groups and communities within the platform itself.",
     "contextP2": "As a subsidiary of Amazon, you can connect your Amazon account to Goodreads and have your Kindle notes and highlights in the app, as well as import your Amazon library into the app.",
-    "problem": "The choosen problem",
+    "problem": "The chosen problem",
     "problemP1": "The flow chosen was Settings and Edit Profile. I identified some problems like:",
     "problemL1": "Decrease in the number of steps to perform the task",
     "problemL2": "Reduction in the amount of unnecessary text on the screen and redistribution of information",
