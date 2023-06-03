@@ -1,0 +1,15 @@
+.backLink {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.03em;
+    color: #B23F62;
+}
+
+.backIcon{
+    width: 3rem;
+}

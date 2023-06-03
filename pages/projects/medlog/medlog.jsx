@@ -1,8 +1,9 @@
-import styles from '../projects.module.css'
+import styles from '../../../styles/projectsUtil.module.css'
 import utilStyles from '../../../styles/utils.module.css'
 import useTranslation from 'next-translate/useTranslation'
 import Image from 'next/image';
 import Layout from '../../../components/layout';
+import { BackButton } from '../../../components/back-button/back-button';
 
 export default function Medlog() {
     const { t } = useTranslation("medlog");
@@ -10,12 +11,17 @@ export default function Medlog() {
     return (
         <Layout>
             <div className={styles.content}>
-                <div className={styles.backLink}>
-                    <Image src="/icons/arrow-left.svg" width={12} height={12}></Image>
-                    <span className='margin-left-1'>{commonTranslation('backProjects')}</span>
-                </div>
+                <BackButton
+                    url="/projects/projects"
+                    text={commonTranslation('backProjects')}
+                ></BackButton>
 
-                <h1 className={`${utilStyles.headingMd} margin-top-3`}>{t('title')}</h1>
+                <div className={`${styles.title} margin-top-3`}>
+                    <h1 className={`${utilStyles.headingMd}`}>{t('title')}</h1>
+                    <div className={utilStyles.pills}>
+                        <div className={`${utilStyles.pill} ${utilStyles.webpill}`}>web</div>
+                    </div>
+                </div>
                 <center>
                     <Image src='/images/medlog-wide.svg' alt="medlog image" width={999} height={501} className={utilStyles.columImages} />
                 </center>
@@ -81,7 +87,7 @@ export default function Medlog() {
                 </div>
                 <p className={`margin-top-2`}>{t('resultsP4')}</p>
                 <center>
-                    <Image src='/images/medlog-result-3.png' alt="medlog image" width={1000} height={478} className={utilStyles.columImages} />
+                    <Image src='/images/medlog-result-3.png' alt="medlog image" width={1000} height={537} className={utilStyles.columImages} />
                 </center>
                 <p className={`margin-top-2`}>{t('resultsP5')}</p>
 

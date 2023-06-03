@@ -1,0 +1,20 @@
+{
+    "title": "Simbora - Landing Page",
+    "abstract": "This landing page design process is a holistic and user-centered approach that combines aesthetics, functionality, and communication. The idea was make it simple, aestetic pleasant and objective, communicating clearly all the informations needed.",
+    "context": "The Context",
+    "contextp1": "Simbora is a customized delivery routing and management system. They’re situated on Fortaleza, Brazil. The name refers to local expression that means “Let’s go”. They offer logistics services, intelligent routing, control tower, financial management, BI dashboard and customer communication services. They wanted a simple page to communicate their services to their clients and target audience.",
+    "problem": "The Problem",
+    "problemP1": "I start by gathering the requirements and expectations of the client for the landing page. I ask questions such as: What is the goal of the landing page? Who is the target audience? What is the main message and value proposition? What is the tone and voice of the brand? What is the principal value and service you want to highlight on the site?",
+    "problemP2": "I also ask for some examples of landing pages and sites they like, and I made a moodboard. Imade a market research and analysis of similar or relevant landing pages to identify best practices, opportunities, and challenges. I look at aspects such as: design, content, usability, and technical viability (considering teh budget they had to this project).",
+    "process": "The Process",
+    "processP1": "I create low-fidelity wireframes of the landing page structure and layout. I used Figma to create wireframes that are clear, simple, and consistent. I focus on the user flow, hierarchy, and alignment of the elements. Here, I also presented some design elements that could help the client to see how the design was alingned with the branding guidelines they presented me.",
+    "processP2": "I test and validate my wireframes with real users or stakeholders to get feedback and insights. I use user testing method to collect some improvement points of the wireframes. I iterate and refine my wireframes based on the feedback from the tests and the stakeholders.",
+    "processP3": "I craft the copy and content of the landing page using UX writing principles and techniques. I write clear, concise, and persuasive texts that communicate the value proposition and call to action of the landing page. I use the tone and voice of the brand to create a consistent and memorable experience for the users. All the information I putted on there was as clearly and objective as possible.",
+    "processP4": "I transform the  wireframe and text into a high fidelity prototype that resembles the final product. I add colors, fonts, images, icons, and animations to create a visually appealing and engaging landing page. I use Figma to create the interactive prototype that can be viewed and tested on web navigator. After aprroved, I made the mobile prototype and tested it. While I did all the user interface, I also made the UI Kit and tokens to help the developer to build the site.",
+    "processP5": "I conducted a final round of testing and validation with the stakeholders to ensure that the landing page meets the client’s goals and expectations. Them I deliver the final prototype along with a documentation that explains the design decisions and recommendations.",
+    "design": "The Final Design",
+    "designP1": "After end all these process of understanding, constructions and validation, and considering the brand guidelines, colors and following a stylish design based on the brand, the final interface was the landing page below:",
+    "designbtn": "See the complete page here",
+    "conclusion": "Conclusion",
+    "conclusionP1":"This landing page was a good challenge to me because I could practice and improve some new look to design process, design styles, design tokens, UI kit and UX writing to a new type of product, different of what I used to do as UX Designer. I am very happy and proud of what I learned with this project."
+}
