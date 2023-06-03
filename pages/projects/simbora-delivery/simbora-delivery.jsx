@@ -16,7 +16,13 @@ export default function SimboraLP() {
                     text={commonTranslation('backProjects')}
                 ></BackButton>
 
-                <h1 className={`${utilStyles.headingMd} margin-top-3`}>{t('title')}</h1>
+                <div className={`${styles.title} margin-top-3`}>
+                    <h1 className={`${utilStyles.headingMd}`}>{t('title')}</h1>
+                    <div className={utilStyles.pills}>
+                        <div className={`${utilStyles.pill} ${utilStyles.webpill}`}>web</div>
+                        <div className={`${utilStyles.pill} ${utilStyles.mobilepill}`}>mobile</div>
+                    </div>
+                </div>
                 <center>
                     <Image src='/images/simbora-wide.png' alt="simbora image" width={999} height={501} className={utilStyles.columImages} />
                 </center>

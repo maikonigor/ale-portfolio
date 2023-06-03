@@ -9,7 +9,16 @@
     color: #767676;
 }
 
+.title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
+.title div{
+    padding: 1rem;
+}
 
 .abstract {
     display: flex;

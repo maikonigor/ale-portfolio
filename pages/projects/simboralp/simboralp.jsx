@@ -11,12 +11,18 @@ export default function SimboraLP() {
     return (
         <Layout>
             <div className={styles.content}>
-            <BackButton
+                <BackButton
                     url="/projects/projects"
                     text={commonTranslation('backProjects')}
                 ></BackButton>
 
-                <h1 className={`${utilStyles.headingMd} margin-top-3`}>{t('title')}</h1>
+                <div className={`${styles.title} margin-top-3`}>
+                    <h1 className={`${utilStyles.headingMd}`}>{t('title')}</h1>
+                    <div className={utilStyles.pills}>
+                        <div className={`${utilStyles.pill} ${utilStyles.webpill}`}>web</div>
+                        <div className={`${utilStyles.pill} ${utilStyles.mobilepill}`}>mobile</div>
+                    </div>
+                </div>
                 <center>
                     <Image src='/images/simboralp-wide.png' alt="simbora image" width={999} height={551} className={utilStyles.columImages} />
                 </center>
