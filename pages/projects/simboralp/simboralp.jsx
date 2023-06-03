@@ -1,4 +1,4 @@
-import styles from '../projects.module.css'
+import styles from '../../../styles/projectsUtil.module.css'
 import utilStyles from '../../../styles/utils.module.css'
 import useTranslation from 'next-translate/useTranslation'
 import Image from 'next/image';

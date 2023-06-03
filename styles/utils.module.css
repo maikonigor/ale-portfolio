@@ -55,6 +55,11 @@
   line-height: 36px
 }
 
+.bulletList{
+  list-style: disc;
+  line-height: 36px
+}
+
 .lightText {
   color: #666;
 }

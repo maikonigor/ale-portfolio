@@ -61,7 +61,7 @@ export default function Projects() {
                 </div>
 
                 {/* Good Reads */}
-                <div className={`${utilStyles.sectionColumn} pointer`}>
+                <div className={`${utilStyles.sectionColumn} pointer`} onClick={()=>goToProject('/projects/goodreads/goodreads')}>
                     <Image src='/images/good-reads.png' width={560} height={400} className={utilStyles.columImages} />
                     <div className={utilStyles.sectionColumnDetail}>
                         <p className={utilStyles.headingMd}>{t('goodReadsTitle')}</p>

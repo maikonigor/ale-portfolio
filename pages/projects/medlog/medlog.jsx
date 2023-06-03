@@ -1,4 +1,4 @@
-import styles from '../projects.module.css'
+import styles from '../../../styles/projectsUtil.module.css'
 import utilStyles from '../../../styles/utils.module.css'
 import useTranslation from 'next-translate/useTranslation'
 import Image from 'next/image';
@@ -82,7 +82,7 @@ export default function Medlog() {
                 </div>
                 <p className={`margin-top-2`}>{t('resultsP4')}</p>
                 <center>
-                    <Image src='/images/medlog-result-3.png' alt="medlog image" width={1000} height={478} className={utilStyles.columImages} />
+                    <Image src='/images/medlog-result-3.png' alt="medlog image" width={1000} height={537} className={utilStyles.columImages} />
                 </center>
                 <p className={`margin-top-2`}>{t('resultsP5')}</p>
 
