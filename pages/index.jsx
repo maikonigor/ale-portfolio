@@ -19,7 +19,10 @@ const socialButtons = [
 export default function Home() {
   const { locale } = useRouter();
   const { t } = useTranslation("home");
-
+  const router = useRouter();
+  const goToProject = (url) => {
+    router.push(url, undefined, { locale: router.locale })
+  }
   return (
     <>
       <Layout home>
@@ -65,7 +68,7 @@ export default function Home() {
           <p className={`${utilStyles.headingMd} ${utilStyles.topic}`}>{t('projectTitle')}</p>
 
           {/* Medlog */}
-          <div className={utilStyles.sectionColumn}>
+          <div className={`${utilStyles.sectionColumn} pointer`} onClick={()=>goToProject('/projects/medlog/medlog')}>
             <Image src='/images/medlog.svg' width={560} height={400} className={utilStyles.columImages} />
             <div className={utilStyles.sectionColumnDetail}>
               <p className={utilStyles.headingMd}>{t('medLogTitle')} </p>
@@ -79,7 +82,7 @@ export default function Home() {
           </div>
 
           {/* Simbora landing page */}
-          <div className={utilStyles.sectionColumn}>
+          <div className={`${utilStyles.sectionColumn} pointer`} onClick={()=>goToProject('/projects/simboralp/simboralp')}>
             <Image src='/images/simbora-lp.png' width={560} height={400} className={utilStyles.columImages} />
             <div className={utilStyles.sectionColumnDetail}>
               <p className={utilStyles.headingMd}>Simbora - Landing Page </p>
@@ -94,7 +97,7 @@ export default function Home() {
           </div>
 
           {/* SImbora delivery */}
-          <div className={utilStyles.sectionColumn}>
+          <div className={`${utilStyles.sectionColumn} pointer`} onClick={()=>goToProject('/projects/simbora-delivery/simbora-delivery')}>
             <Image src='/images/simbora-delivery.png' width={560} height={400} className={utilStyles.columImages} />
             <div className={utilStyles.sectionColumnDetail}>
               <p className={utilStyles.headingMd}>Simbora Delivery</p>
@@ -109,7 +112,7 @@ export default function Home() {
           </div>
 
           {/* Good Reads */}
-          <div className={utilStyles.sectionColumn}>
+          <div className={`${utilStyles.sectionColumn} pointer`} onClick={()=>goToProject('/projects/goodreads/goodreads')}>
             <Image src='/images/good-reads.png' width={560} height={400} className={utilStyles.columImages} />
             <div className={utilStyles.sectionColumnDetail}>
               <p className={utilStyles.headingMd}>{t('goodReadsTitle')}</p>
@@ -123,7 +126,7 @@ export default function Home() {
           </div>
 
           {/* Extras */}
-          <div className={utilStyles.sectionColumn}>
+          <div className={`${utilStyles.sectionColumn}`}>
             <Image src='/images/extras.png' width={560} height={400} className={utilStyles.columImages} />
             <div className={utilStyles.sectionColumnDetail}>
               <p className={utilStyles.headingMd}>Extras </p>
