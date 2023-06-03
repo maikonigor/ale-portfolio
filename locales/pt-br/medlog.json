@@ -27,7 +27,7 @@
     "processP3": "Para todo esse trabalho, usei alguns padrões de organização que a empresa tinha e conversei com a equipe de Desenvolvimento para entender o que eles haviam feito até aquele momento. Também estudei todo o Design System usado pela empresa antes de aplicá-lo, entendendo as regras e usos. Então comecei.",
     "results": "Os Resultados",
     "resultsP1": "Considerando todos os pontos das partes interessadas, o novo layout tinha alguns atalhos para recursos das plataformas de contexto e a opção de escolher alguns favoritos para listar no lado direito, tornando o acesso um pouco mais rápido e com uma organização personalizada.",
-    "results:P2": "Considerei as cores da marca e outros produtos feitos para o seguro saúde com base no Design System. Dessa forma, pude manter a consistência e seguir os mesmos parâmetros. Aqui também considerei a Lei de Jakob Nielsen para um bom design.",
+    "resultsP2": "Considerei as cores da marca e outros produtos feitos para o seguro saúde com base no Design System. Dessa forma, pude manter a consistência e seguir os mesmos parâmetros. Aqui também considerei a Lei de Jakob Nielsen para um bom design.",
     "resultsP3": "O novo layout era algo assim:",
     "resultsP4": "Cada plataforma de contexto tem seus próprios atalhos e possibilidades de favoritos:",
     "resultsP5": "Essa nova interface foi aprovada pelas partes interessadas com sucesso. A intenção é observar como ela funciona para os usuários e obter alguns feedbacks.",

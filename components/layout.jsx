@@ -99,7 +99,7 @@ export default function Layout({ children }) {
             <main className={styles.body}>{children}</main>
             <footer className={styles.footer}>
                 <p>Designed in Figma. </p>
-                <p>Developed by Maikon Soares</p>
+                <p><a href='https://www.linkedin.com/in/maikonigor/' target='_blank'>Developed by Maikon Soares</a></p>
                 <p className={styles.textBlack80}>Alexsandra Lopes • 2023</p>
             </footer>
         </>
