@@ -9,6 +9,7 @@ module.exports = {
 		"/projects/medlog/medlog": ["common","medlog"],
 		"/projects/simboralp/simboralp": ["common","simboralp"],
 		"/projects/simbora-delivery/simbora-delivery": ["simbora-delivery"],
+		"/projects/goodreads/goodreads": ["goodreads"],
 		"/extras/extras": ["extras"],
 		"/about/about": ["about"],
 		"/publications/publications": ["publications"],
