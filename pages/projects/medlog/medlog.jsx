@@ -22,7 +22,7 @@ export default function Medlog() {
                         <div className={`${utilStyles.pill} ${utilStyles.webpill}`}>web</div>
                     </div>
                 </div>
-                <center>
+                <center className={`margin-top-2`}>
                     <Image src='/images/medlog-wide.svg' alt="medlog image" width={999} height={501} className={utilStyles.columImages} />
                 </center>
                 <div className={`${styles.abstract}`}>
@@ -64,7 +64,7 @@ export default function Medlog() {
 
                 <h1 className={`${utilStyles.headingMd} margin-top-3`}>{t('process')}</h1>
                 <p className={`margin-top-2`}>{t('processP1')}</p>
-                <center>
+                <center className={`margin-top-2`}>
                     <Image src='/images/medlog-process.png' alt="medlog image" width={1000} height={478} className={utilStyles.columImages} />
                 </center>
                 <p className={`margin-top-2`}>{t('processP2')}</p>
@@ -86,7 +86,7 @@ export default function Medlog() {
                     <Image src='/images/medlog-result-2.png' alt="medlog image" width={448} height={222} className={utilStyles.columImages} />
                 </div>
                 <p className={`margin-top-2`}>{t('resultsP4')}</p>
-                <center>
+                <center className={`margin-top-2`}>
                     <Image src='/images/medlog-result-3.png' alt="medlog image" width={1000} height={537} className={utilStyles.columImages} />
                 </center>
                 <p className={`margin-top-2`}>{t('resultsP5')}</p>

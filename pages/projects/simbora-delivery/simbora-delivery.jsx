@@ -23,7 +23,7 @@ export default function SimboraLP() {
                         <div className={`${utilStyles.pill} ${utilStyles.mobilepill}`}>mobile</div>
                     </div>
                 </div>
-                <center>
+                <center className={`margin-top-2`}>
                     <Image src='/images/simbora-wide.png' alt="simbora image" width={999} height={501} className={utilStyles.columImages} />
                 </center>
                 <div className={`${styles.abstract}`}>
@@ -50,7 +50,7 @@ export default function SimboraLP() {
                 <p className={`margin-top-2`}>{t('designingP3')}</p>
 
                 <h1 className={`${utilStyles.headingMd} margin-top-3`}>{t('client')}</h1>
-                <center>
+                <center className={`margin-top-2`}>
                     <Image src='/images/simbora-client-1.png' alt="simbora image" width={1000} height={562} className={`${utilStyles.columImages} margin-top-1`} />
                     <Image src='/images/simbora-client-2.png' alt="simbora image" width={1000} height={562} className={`${utilStyles.columImages} margin-top-1`} />
                     <Image src='/images/simbora-client-3.png' alt="simbora image" width={1000} height={1351} className={`${utilStyles.columImages} margin-top-1`} />
@@ -58,12 +58,12 @@ export default function SimboraLP() {
                 </center>
 
                 <h1 className={`${utilStyles.headingMd} margin-top-3`}>{t('deliveryman')}</h1>
-                <center>
+                <center className={`margin-top-2`}>
                     <Image src='/images/simbora-deliveryman.png' alt="simbora image" width={1000} height={1000} className={`${utilStyles.columImages} margin-top-1`} />
                 </center>
 
                 <h1 className={`${utilStyles.headingMd} margin-top-3`}>{t('restaurant')}</h1>
-                <center>
+                <center className={`margin-top-2`}>
                     <Image src='/images/simbora-restaurant-1.png' alt="simbora image" width={1000} height={887} className={`${utilStyles.columImages} margin-top-1`} />
                     <Image src='/images/simbora-restaurant-2.png' alt="simbora image" width={1000} height={887} className={`${utilStyles.columImages} margin-top-1`} />
                 </center>
