@@ -75,12 +75,12 @@ export default function Projects() {
                 </div>
 
                 {/* MAR ABERTO */}
-                <div className={`${utilStyles.sectionColumn} pointer`}>
+                <div className={`${utilStyles.sectionColumn} pointer`} onClick={()=>goToProject('/projects/mar-aberto/mar-aberto')}>
                     <Image src='/images/mar-aberto.png' width={560} height={400} className={utilStyles.columImages} />
                     <div className={utilStyles.sectionColumnDetail}>
                         <p className={utilStyles.headingMd}>Mar Aberto - Landing Page </p>
                         <div className={utilStyles.pills}>
-                            <div className={`${utilStyles.pill} ${utilStyles.otherpill}`}>others</div>
+                            <div className={`${utilStyles.pill} ${utilStyles.webpill}`}>Web</div>
                         </div>
                         <p>
                             {t('marAberto')}

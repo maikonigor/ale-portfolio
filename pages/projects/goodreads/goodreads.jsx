@@ -22,7 +22,7 @@ export default function Goodreads() {
                         <div className={`${utilStyles.pill} ${utilStyles.mobilepill}`}>mobile</div>
                     </div>
                 </div>
-                <center>
+                <center className={`margin-top-2`}>
                     <Image src='/images/goodreads-wide.png' alt="simbora image" width={999} height={501} className={utilStyles.columImages} />
                 </center>
                 <div className={`${styles.abstract}`}>
@@ -52,7 +52,7 @@ export default function Goodreads() {
                     }
                 </ul>
                 <p className={`margin-top-2`}>{t('problemP2')}</p>
-                <center>
+                <center className={`margin-top-2`}>
                     <Image src='/images/gr-problem.png' alt="goodreads image" width={1000} height={562} className={`${utilStyles.columImages} margin-top-1`} />
                 </center>
 
@@ -67,7 +67,7 @@ export default function Goodreads() {
                 </ul>
 
                 <h1 className={`${utilStyles.headingMd} margin-top-3`}>{t('result')}</h1>
-                <center>
+                <center className={`margin-top-2`}>
                     <Image src='/images/gr-result.png' alt="goodreads image" width={1000} height={562} className={`${utilStyles.columImages} margin-top-1`} />
                     <Image src='/images/gr-result-2.png' alt="goodreads image" width={1000} height={562} className={`${utilStyles.columImages} margin-top-1`} />
                 </center>

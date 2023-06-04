@@ -23,7 +23,7 @@ export default function SimboraLP() {
                         <div className={`${utilStyles.pill} ${utilStyles.mobilepill}`}>mobile</div>
                     </div>
                 </div>
-                <center>
+                <center className={`margin-top-2`}>
                     <Image src='/images/simboralp-wide.png' alt="simbora image" width={999} height={551} className={utilStyles.columImages} />
                 </center>
                 <div className={`${styles.abstract}`}>
@@ -58,14 +58,14 @@ export default function SimboraLP() {
                 </div>
                 <p className={`margin-top-2`}>{t('processP3')}</p>
                 <p className={`margin-top-2`}>{t('processP4')}</p>
-                <center>
+                <center className={`margin-top-2`}>
                     <Image src='/images/slp-process-5.png' alt="simbora image" width={1000} height={662} className={utilStyles.columImages} />
                 </center>
                 <p className={`margin-top-5`}>{t('processP4')}</p>
 
                 <h1 className={`${utilStyles.headingMd} margin-top-3`}>{t('design')}</h1>
                 <p className={`margin-top-5`}>{t('designP1')}</p>
-                <center>
+                <center className={`margin-top-2`}>
                     <Image src='/images/slp-design.png' alt="simbora image" width={1000} height={673} className={utilStyles.columImages} />
                 </center>
 
