@@ -105,6 +105,7 @@
 
 @media all and (max-width: 950px) {
     .nav {
+        width: 100%;
         justify-content: space-between;
         flex-wrap: wrap;
         position: relative;
@@ -124,6 +125,7 @@
         display: inline-block;
         cursor: pointer;
         margin-left: 2rem;
+        z-index: 1;
     }
 
     .menu {
@@ -145,6 +147,7 @@
         width: 50%;
         left: 0;
         animation: slideright 0.3s;
+        z-index: 1;
     }
 
     @keyframes slideright {
