@@ -10,6 +10,7 @@ module.exports = {
 		"/projects/simboralp/simboralp": ["common","simboralp"],
 		"/projects/simbora-delivery/simbora-delivery": ["simbora-delivery"],
 		"/projects/goodreads/goodreads": ["goodreads"],
+		"/projects/mar-aberto/mar-aberto": ["mar-aberto"],
 		"/extras/extras": ["extras"],
 		"/about/about": ["about"],
 		"/publications/publications": ["publications"],
