@@ -61,7 +61,7 @@ export default function Extras() {
                 </div>
 
                 {/* Veganildos */}
-                <div className={`${utilStyles.sectionColumn} pointer`} onClick={()=>goToProject('/extras/veganildos/veganildos')}>
+                <div className={`${utilStyles.sectionColumn} pointer`} onClick={()=>goToProject('#')}>
                     <Image src='/images/veganildos.png' width={560} height={400} className={utilStyles.columImages} />
                     <div className={utilStyles.sectionColumnDetail}>
                         <p className={utilStyles.headingMd}>Veganildos Podcast - Logo </p>
