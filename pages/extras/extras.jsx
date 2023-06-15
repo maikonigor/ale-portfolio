@@ -21,8 +21,7 @@ export default function Extras() {
                     <div className={utilStyles.sectionColumnDetail}>
                         <p className={utilStyles.headingMd}>{t('covid')} </p>
                         <div className={utilStyles.pills}>
-                            <div className={`${utilStyles.pill} ${utilStyles.webpill}`}>WEB</div>
-                            <div className={`${utilStyles.pill} ${utilStyles.mobilepill}`}>MOBILE</div>
+                            <div className={`${utilStyles.pill} ${utilStyles.otherpill}`}>Others</div>
                         </div>
                         <p>
                             {t('covidText')}
@@ -61,12 +60,12 @@ export default function Extras() {
                 </div>
 
                 {/* Veganildos */}
-                <div className={`${utilStyles.sectionColumn} pointer`} onClick={()=>goToProject('#')}>
+                <div className={`${utilStyles.sectionColumn} pointer`} onClick={()=>goToProject('/extras/veganildos/veganildos')}>
                     <Image src='/images/veganildos.png' width={560} height={400} className={utilStyles.columImages} />
                     <div className={utilStyles.sectionColumnDetail}>
                         <p className={utilStyles.headingMd}>Veganildos Podcast - Logo </p>
                         <div className={utilStyles.pills}>
-                            <div className={`${utilStyles.pill} ${utilStyles.webpill}`}>web</div>
+                            <div className={`${utilStyles.pill} ${utilStyles.otherpill}`}>Others</div>
                         </div>
                         <p>
                             {t('veganildos')}
