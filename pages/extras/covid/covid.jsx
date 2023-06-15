@@ -19,7 +19,7 @@ export default function Covid() {
                 <div className={`${styles.title} margin-top-3`}>
                     <h1 className={`${utilStyles.headingMd}`}>{t('title')}</h1>
                     <div className={utilStyles.pills}>
-                        <div className={`${utilStyles.pill} ${utilStyles.otherpill}`}>Other Design</div>
+                        <div className={`${utilStyles.pill} ${utilStyles.otherpill}`}>Others</div>
                     </div>
                 </div>
                 <center className={`margin-top-2`}>

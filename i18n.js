@@ -11,10 +11,11 @@ module.exports = {
 		"/projects/simbora-delivery/simbora-delivery": ["simbora-delivery"],
 		"/projects/goodreads/goodreads": ["goodreads"],
 		"/projects/mar-aberto/mar-aberto": ["mar-aberto"],
+		"/extras/extras": ["extras"],
 		"/extras/bauhaus/bauhaus": ["bauhaus"],
 		"/extras/pride-prejudice/pride-prejudice": ["pride-prejudice"],
 		"/extras/covid/covid": ["covid"],
-		"/extras/extras": ["extras"],
+		"/extras/veganildos/veganildos": ["veganildos"],
 		"/about/about": ["about"],
 		"/publications/publications": ["publications"],
 		"/resume/resume": ["resume"]
